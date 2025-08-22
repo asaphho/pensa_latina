@@ -1,0 +1,47 @@
+fluvius river
+fluvii rivers
+insula island
+insulae islands
+oppidum town
+oppida towns
+oceanus ocean
+oceani oceans
+imperium empire
+imperia empires
+provincia province
+provinciae provinces
+numerus number
+numeri numbers
+littera letter
+litterae letters
+vocabulum word
+vocabula words
+capitulum chapter
+capitula chapters
+syllaba syllable
+syllabae syllables
+exemplum example
+exempla examples
+pensum exercise
+pensa exercises
+magnus great, large, big
+parvus small, little
+graecus Greek
+romanus Roman
+latinus Latin
+multi many
+pauci few
+unus one
+duo two
+tres three
+sex six
+mille one thousand
+primus first
+secundus second
+tertius third
+est is
+sunt are
+in in
+et and
+sed but
+non not
