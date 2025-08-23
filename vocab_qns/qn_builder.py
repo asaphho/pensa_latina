@@ -52,8 +52,7 @@ def display_question(word_and_numerical_choices: dict[str, str]) -> None:
     print(word_and_numerical_choices['word'])
     for k in ['1', '2', '3', '4']:
         print(f'{k}: {word_and_numerical_choices[k]}')
-    print('\n')
-    print('e: Exit exercise')
+    print('\ne: Exit exercise')
 
 
 def new_question(lines: list[str], from_english: bool = False) -> bool:
