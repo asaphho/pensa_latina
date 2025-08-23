@@ -52,9 +52,11 @@ def display_question(word_and_numerical_choices: dict[str, str]) -> None:
     print(word_and_numerical_choices['word'])
     for k in ['1', '2', '3', '4']:
         print(f'{k}: {word_and_numerical_choices[k]}')
+    print('\n')
+    print('e: Exit exercise')
 
 
-def new_question(lines: list[str], from_english: bool = False) -> None:
+def new_question(lines: list[str], from_english: bool = False) -> bool:
     word_and_choices = pick_word_and_ans_choices(lines, from_english)
     word_and_num_choices = assign_choices(word_and_choices)
     display_question(word_and_num_choices)
@@ -62,9 +64,27 @@ def new_question(lines: list[str], from_english: bool = False) -> None:
         player_input = input()
         if player_input.strip() == word_and_num_choices['correct']:
             print('Correct!')
-            break
+            return False
         elif player_input.strip() in ('1', '2', '3', '4'):
             print(f'Sorry, the correct answer is "{word_and_choices["correct"]}"')
-            break
+            return False
+        elif player_input.strip().lower() == 'e':
+            return True
         else:
             print('Unrecognized input. Please input 1, 2, 3, or 4.')
+
+
+def begin_exercise(filenames: list[str], mode: str) -> None:
+    lines = open_files(*filenames)
+    if mode == 'latin':
+        params = [False]
+    elif mode == 'english':
+        params = [True]
+    else:
+        params = [True, False]
+    exit_loop = False
+    while not exit_loop:
+        exit_loop = new_question(lines, from_english=random.choice(params))
+    print('Exercise terminated')
+
+
