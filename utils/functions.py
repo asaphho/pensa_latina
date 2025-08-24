@@ -1,6 +1,6 @@
 import json
 import os
-from nouns_adjs import NOUNS_FOLDER
+from decl_conj import DECL_CONJ_FOLDER
 import random
 
 
@@ -12,8 +12,8 @@ def is_capitalized(word: str) -> bool:
     return word[0].upper() == word[0]
 
 
-def add_noun(json_filename: str, english: str, forms: list[str]) -> None:
-    json_filepath = os.path.join(NOUNS_FOLDER, json_filename)
+def add_word(json_filename: str, english: str, forms: list[str]) -> None:
+    json_filepath = os.path.join(DECL_CONJ_FOLDER, json_filename)
     file_exists = os.path.exists(json_filepath)
     noun_forms = list(set(forms))
     if not file_exists:
@@ -29,7 +29,7 @@ def add_noun(json_filename: str, english: str, forms: list[str]) -> None:
 
 
 def add_form(json_filename: str, english: str, form: str) -> None:
-    json_filepath = os.path.join(NOUNS_FOLDER, json_filename)
+    json_filepath = os.path.join(DECL_CONJ_FOLDER, json_filename)
     with open(json_filepath, 'r') as f:
         nouns_data = json.load(f)
     if english not in nouns_data:
