@@ -1,0 +1,120 @@
+{
+    "river": [
+        "fluvius",
+        "fluviis",
+        "fluvium",
+        "fluvios",
+        "fluvio",
+        "fluvii",
+        "fluviorum"
+    ],
+    "island": [
+        "insulis",
+        "insulam",
+        "insulas",
+        "insula",
+        "insulae",
+        "insularum"
+    ],
+    "town": [
+        "oppidum",
+        "oppido",
+        "oppida",
+        "oppidis",
+        "oppidi",
+        "oppidorum"
+    ],
+    "ocean": [
+        "oceani",
+        "oceanum",
+        "oceano",
+        "oceanus",
+        "oceanos",
+        "oceanorum",
+        "oceanis"
+    ],
+    "province": [
+        "provinciis",
+        "provincias",
+        "provinciarum",
+        "provincia",
+        "provinciae",
+        "provinciam"
+    ],
+    "number": [
+        "numero",
+        "numerus",
+        "numeris",
+        "numeri",
+        "numerum",
+        "numerorum",
+        "numeros"
+    ],
+    "Marcus": [
+        "Marcus",
+        "Marcum",
+        "Marco",
+        "Marci",
+        "Marce"
+    ],
+    "Julia": [
+        "Iuliae",
+        "Iulia",
+        "Iuliam"
+    ],
+    "letter": [
+        "litteras",
+        "litteram",
+        "litterarum",
+        "litterae",
+        "litteris",
+        "littera"
+    ],
+    "great": [
+        "magnus",
+        "magnarum",
+        "magnam",
+        "magnas",
+        "magnae",
+        "magna",
+        "magno",
+        "magnis",
+        "magnos",
+        "magnum",
+        "magnorum",
+        "magni"
+    ],
+    "small": [
+        "parva",
+        "parvum",
+        "parvos",
+        "parvo",
+        "parvae",
+        "parvorum",
+        "parvus",
+        "parvi",
+        "parvam",
+        "parvarum",
+        "parvas",
+        "parvis"
+    ],
+    "many": [
+        "multa",
+        "multi",
+        "multas",
+        "multorum",
+        "multae",
+        "multos",
+        "multis",
+        "multarum"
+    ],
+    "few": [
+        "paucos",
+        "pauci",
+        "pauca",
+        "paucorum",
+        "paucae",
+        "paucam",
+        "paucis"
+    ]
+}
