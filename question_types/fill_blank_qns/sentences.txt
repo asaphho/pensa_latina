@@ -1,0 +1,8 @@
+Video oppidum (I see the town)/Video-verb-see/oppidum-noun-town
+Videt fluvium (He sees the river)/Videt-verb-see/fluvium-noun-river
+Marcus Iuliam amat (Marcus loves Julia)/Marcus-noun-Marcus/Iuliam-noun-Julia/amat-verb-love
+Amo insulas Graeciae (I love the islands of Greece)/Amo-verb-love/insulas-noun-island/Graeciae-noun-Greece
+Suntne magni fluvii Graeciae? (Are the rivers of Greece large?)/magni-adjective-great/fluvii-noun-river/Graeciae-noun-Greece
+Vir puerum pulsat (The man strikes the boy)/Vir-noun-man/puerum-noun-boy/pulsat-verb-strike
+Marcum Iulia videt et pulsat (Julia sees and strikes Marcus)/Marcum-noun-Marcus/Iulia-noun-Julia/videt-verb-see/pulsat-verb-strike
+Marcus filias Iuliae videt (Marcus sees the daughters of Julia)/Marcus-noun-Marcus/filias-noun-daughter/Iuliae-noun-Julia/videt-verb-see
