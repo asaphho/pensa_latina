@@ -58,8 +58,9 @@
         "Marce"
     ],
     "Julia": [
-        "Iuliae",
+        "Iulias",
         "Iulia",
+        "Iuliae",
         "Iuliam"
     ],
     "letter": [
@@ -116,5 +117,37 @@
         "paucae",
         "paucam",
         "paucis"
+    ],
+    "who": [
+        "quae",
+        "quis",
+        "qui",
+        "quem",
+        "quam",
+        "cuius"
+    ],
+    "man": [
+        "viros",
+        "viro",
+        "viri",
+        "vir",
+        "viris",
+        "virum",
+        "virorum"
+    ],
+    "woman": [
+        "feminis",
+        "feminas",
+        "feminam",
+        "feminae",
+        "femina",
+        "feminarum"
+    ],
+    "Greece": [
+        "Graecia",
+        "Graeciae",
+        "Graeciane",
+        "Graeciam",
+        "Graecias"
     ]
 }
