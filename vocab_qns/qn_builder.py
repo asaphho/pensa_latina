@@ -73,8 +73,11 @@ def new_question(lines: list[str], from_english: bool = False) -> bool:
             print('Unrecognized input. Please input 1, 2, 3, or 4.')
 
 
-def begin_exercise(filenames: list[str], mode: str) -> None:
-    lines = open_files(*filenames)
+def begin_exercise(filenames: list[str] = None, mode: str = 'latin') -> None:
+    if filenames is None:
+        lines = open_files(*[file for file in os.listdir(VOCABULARY_FOLDER) if file.endswith('.txt')])
+    else:
+        lines = open_files(*filenames)
     if mode == 'latin':
         params = [False]
     elif mode == 'english':
