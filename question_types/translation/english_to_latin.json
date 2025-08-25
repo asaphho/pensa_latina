@@ -1,0 +1,15 @@
+[
+    {
+        "sentence": "I see the town.",
+        "correct": "Oppidum video.",
+        "wrong": [
+            "Oppida video.",
+            "Oppidi video.",
+            "Oppida videt.",
+            "Oppidum vides.",
+            "Oppidum videt.",
+            "Domum video.",
+            "Fluvium video."
+        ]
+    }
+]

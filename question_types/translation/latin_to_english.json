@@ -1,0 +1,15 @@
+[
+    {
+        "sentence": "Oppidum video.",
+        "correct": "I see the town.",
+        "wrong": [
+            "He sees the town.",
+            "They see the town.",
+            "We see the town.",
+            "I see the opponent.",
+            "I see the ocean.",
+            "I see the opening.",
+            "I see the towns."
+        ]
+    }
+]
