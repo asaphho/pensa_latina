@@ -54,7 +54,7 @@ def begin_exercise(from_english: bool = False) -> None:
     filepath = english_to_latin_path if from_english else latin_to_english_path
     with open(filepath, 'r') as f:
         sentences_list = json.load(f)
-    qn = choose_sentence_and_make_question(sentences=sentences_list)
     exit_loop = False
     while not exit_loop:
+        qn = choose_sentence_and_make_question(sentences=sentences_list)
         exit_loop = test_question(qn)
