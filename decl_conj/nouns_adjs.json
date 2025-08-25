@@ -25,13 +25,13 @@
         "oppidorum"
     ],
     "ocean": [
-        "oceani",
         "oceanum",
-        "oceano",
         "oceanus",
-        "oceanos",
         "oceanorum",
-        "oceanis"
+        "oceanis",
+        "oceano",
+        "oceanos",
+        "oceani"
     ],
     "province": [
         "provinciis",
@@ -149,5 +149,173 @@
         "Graeciane",
         "Graeciam",
         "Graecias"
+    ],
+    "Julius": [
+        "Iulium",
+        "Iulius",
+        "Iulio",
+        "Iulii"
+    ],
+    "son": [
+        "filiis",
+        "filium",
+        "filii",
+        "filio",
+        "filius",
+        "filios",
+        "filiorum"
+    ],
+    "daughter": [
+        "filiae",
+        "filiabus",
+        "filia",
+        "filias",
+        "filiam",
+        "filiarum"
+    ],
+    "Rome": [
+        "Romae",
+        "Romam",
+        "Rome",
+        "Roma"
+    ],
+    "slave": [
+        "servorum",
+        "servus",
+        "servum",
+        "servi",
+        "servis",
+        "servos",
+        "servo"
+    ],
+    "maid": [
+        "ancillarum",
+        "ancillas",
+        "ancillis",
+        "ancilla",
+        "ancillam",
+        "ancillae"
+    ],
+    "coin": [
+        "nummos",
+        "nummi",
+        "nummorum",
+        "nummus",
+        "nummum",
+        "nummo",
+        "nummis"
+    ],
+    "Quintus": [
+        "Quinte",
+        "Quinto",
+        "Quintus",
+        "Quinti",
+        "Quintum"
+    ],
+    "boy": [
+        "puer",
+        "puerum",
+        "pueris",
+        "puerorum",
+        "puero",
+        "pueri",
+        "pueros"
+    ],
+    "girl": [
+        "puellae",
+        "puellas",
+        "puella",
+        "puellarum",
+        "puellis",
+        "puellam"
+    ],
+    "sailor": [
+        "nautam",
+        "nautis",
+        "nautarum",
+        "nautae",
+        "nautas",
+        "nauta"
+    ],
+    "Claudia": [
+        "Claudiam",
+        "Claudias",
+        "Claudiae",
+        "Claudia"
+    ],
+    "Aurelia": [
+        "Aureliam",
+        "Aurelias",
+        "Aurelia",
+        "Aureliae"
+    ],
+    "Lucius": [
+        "Lucii",
+        "Lucium",
+        "Lucio",
+        "Lucius"
+    ],
+    "Publius": [
+        "Publii",
+        "Publius",
+        "Publium",
+        "Publio"
+    ],
+    "good": [
+        "bono",
+        "bona",
+        "bonas",
+        "bonae",
+        "bonos",
+        "bonus",
+        "boni",
+        "bonum",
+        "bonarum",
+        "bonorum",
+        "bonam",
+        "bonis"
+    ],
+    "money": [
+        "pecuniam",
+        "pecuniae",
+        "pecuniarum",
+        "pecunia",
+        "pecuniis",
+        "pecunias"
+    ],
+    "virtuous": [
+        "probae",
+        "probarum",
+        "probos",
+        "probi",
+        "probas",
+        "proba",
+        "probam",
+        "probus",
+        "proborum",
+        "probis",
+        "probum"
+    ],
+    "wicked": [
+        "improba",
+        "improbae",
+        "improbis",
+        "improbi",
+        "improbum",
+        "improbam",
+        "improbarum",
+        "improborum",
+        "improbus",
+        "improbos",
+        "improbas"
+    ],
+    "master": [
+        "dominis",
+        "dominorum",
+        "dominus",
+        "domini",
+        "dominum",
+        "domino",
+        "dominos"
     ]
 }

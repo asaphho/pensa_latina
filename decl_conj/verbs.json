@@ -25,5 +25,50 @@
         "pulsas",
         "pulsat",
         "pulso"
+    ],
+    "warn": [
+        "monet",
+        "mones",
+        "monetis",
+        "monent",
+        "moneo",
+        "monere",
+        "monemus"
+    ],
+    "give": [
+        "dat",
+        "do",
+        "das",
+        "damus",
+        "dant",
+        "datis",
+        "dare"
+    ],
+    "ought": [
+        "debet",
+        "debetis",
+        "debemus",
+        "debent",
+        "debere",
+        "debeo",
+        "debes"
+    ],
+    "beat": [
+        "verbero",
+        "verberant",
+        "verberatis",
+        "verberamus",
+        "verberat",
+        "verberare",
+        "verberas"
+    ],
+    "have": [
+        "habere",
+        "habetis",
+        "habet",
+        "habent",
+        "habes",
+        "habeo",
+        "habemus"
     ]
 }
