@@ -1,15 +1,66 @@
 [
     {
-        "sentence": "Oppidum video.",
+        "sentence": "Oppidum video",
         "correct": "I see the town.",
         "wrong": [
             "He sees the town.",
             "They see the town.",
             "We see the town.",
+            "Where is the town?",
             "I see the opponent.",
             "I see the ocean.",
             "I see the opening.",
             "I see the towns."
+        ]
+    },
+    {
+        "sentence": "Oppidum videmus",
+        "correct": "We see the town.",
+        "wrong": [
+            "I see the town.",
+            "He sees the town.",
+            "We see the house.",
+            "We see the towns.",
+            "Do we see the town?",
+            "He sees the town.",
+            "He sees the opening.",
+            "I see the wall."
+        ]
+    },
+    {
+        "sentence": "Magnum fluvium videt.",
+        "correct": "He sees the great river.",
+        "wrong": [
+            "They see the great river.",
+            "I see the great river.",
+            "He sees the river.",
+            "I see many rivers.",
+            "He sees many rivers.",
+            "We see the great river.",
+            "He sees the great bath."
+        ]
+    },
+    {
+        "sentence": "Amant insulas Graeciae",
+        "correct": "They love the islands of Greece.",
+        "wrong": [
+            "I love the islands of Greece",
+            "They love the island of Greece.",
+            "We love the islands of Greece.",
+            "Do you love the islands of Greece?",
+            "They love the cities of Greece.",
+            "They love the houses of Greece."
+        ]
+    },
+    {
+        "sentence": "Estne parvum oppidum Brundisium",
+        "correct": "Is Brundisium a small town?",
+        "wrong": [
+            "Brundisium is a small town.",
+            "Is Brundisium a town?",
+            "Where is the town of Brundisium?",
+            "Brundisium is a poor town.",
+            "Is Brundisium a poor town?"
         ]
     }
 ]
