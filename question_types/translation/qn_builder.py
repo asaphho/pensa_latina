@@ -18,6 +18,7 @@ def choose_sentence_and_make_question(sentences: list[dict[str, Union[str, list[
     for i in range(1, 5):
         if i == correct_choice:
             question_data[str(i)] = correct
+            question_data['correct'] = str(i)
         else:
             wrong_sentence = random.choice(wrong_sentences)
             wrong_sentences.remove(wrong_sentence)
