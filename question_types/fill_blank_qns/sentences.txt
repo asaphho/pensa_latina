@@ -1,8 +1,43 @@
-Video oppidum (I see the town)/Video-verb-see/oppidum-noun-town
+Oppidum video (I see the town)/video-verb-see/Oppidum-noun-town
+Oppidum videmus (We see the town)/Oppidum-noun-town/videmus-verb-see
 Videt fluvium (He sees the river)/Videt-verb-see/fluvium-noun-river
 Marcus Iuliam amat (Marcus loves Julia)/Marcus-noun-Marcus/Iuliam-noun-Julia/amat-verb-love
 Amo insulas Graeciae (I love the islands of Greece)/Amo-verb-love/insulas-noun-island/Graeciae-noun-Greece
 Suntne magni fluvii Graeciae? (Are the rivers of Greece large?)/magni-adjective-great/fluvii-noun-river/Graeciae-noun-Greece
 Vir puerum pulsat (The man strikes the boy)/Vir-noun-man/puerum-noun-boy/pulsat-verb-strike
-Marcum Iulia videt et pulsat (Julia sees and strikes Marcus)/Marcum-noun-Marcus/Iulia-noun-Julia/videt-verb-see/pulsat-verb-strike
+Marcum Iulia videt et eum pulsat (Julia sees Marcus and strikes him)/Marcum-noun-Marcus/Iulia-noun-Julia/videt-verb-see/pulsat-verb-strike
 Marcus filias Iuliae videt (Marcus sees the daughters of Julia)/Marcus-noun-Marcus/filias-noun-daughter/Iuliae-noun-Julia/videt-verb-see
+Quintus Marcum monet (Quintus warns Marcus)/Marcum-noun-Marcus/monet-verb-warn
+Viri oppidi Iulium amant (The men of the town love Julius)/Viri-noun-man/oppidi-noun-town/Iulium-noun-Julius/amant-verb-love
+Viri oppidorum Iulium amant (The men of the towns love Julius)/oppidorum-noun-town/amant-verb-love
+Marcum in fluvio parvo video (I see Marcus in the small river)/fluvio-noun-river/parvo-adjective-small/video-verb-see
+Marcum in fluvio parvo videt (He sees Marcus in the small river)/fluvio-noun-river/parvo-adjective-small/videt-verb-see
+Estne parvum oppidum Brundisium? (Is Brundisium a small town?)/parvum-adjective-small/oppidum-noun-town
+Ubi est filius Iulii? (Where is the son of Julius?)/filius-noun-son/Iulii-noun-Julius
+Ubi sunt viri Romae? (Where are the men of Rome?)/viri-noun-man/Romae-noun-Rome
+Marcus filius Iulii est (Marcus is the son of Julius)/Marcus-noun-Marcus/filius-noun-son/Iulii-noun-Julius
+Publius non filius Marci, sed servus eius est (Publius is not the son of Marcus, but his slave)/filius-noun-son/Marci-noun-Marcus/servus-noun-slave
+Marcus Quinto unum nummum dat (Marcus gives Quintus one coin)/Quinto-noun-Quintus/nummum-noun-coin/dat-verb-give
+Marcus et Iulius servis multos nummos dant (Marcus and Julius give the slaves many coins)/servis-noun-slave/multos-adjective-many/nummos-noun-coin/dant-verb-give
+Iulia filio Marci nummum dat (Julia gives the son of Marcus a coin)/filio-noun-son/Marci-noun-Marcus/nummum-noun-coin/dat-verb-give
+Quid debemus dare Marco? (What should we give to Marcus?)/debemus-verb-ought/dare-verb-give/Marco-noun-Marcus
+Quid debeo dare Marco? (What should I give to Marcus?)/debeo-verb-ought/dare-verb-give/Marco-noun-Marcus
+Quid vides? (What do you (sg.) see?)/vides-verb-see
+Quid videtis? (What do you (pl.) see?)/videtis-verb-see
+Oppida et viros oppidorum videmus (We see the towns and the men of the towns)/Oppida-noun-town/viros-noun-man/oppidorum-noun-town/videmus-verb-see
+Oppidum et viros oppidi videmus (We see the town and the men of the town)/Oppidum-noun-town/viros-noun-man/oppidi-noun-town/videmus-verb-see
+Debes dare nummum Quinto (You (sg.) should give the coin to Quintus)/Debes-verb-ought/dare-verb-give/nummum-noun-coin/Quinto-noun-Quintus
+Cur puellam pulsas? (Why are you (sg.) hitting the girl?)/puellam-noun-girl/pulsas-verb-strike
+Cur puellam pulsat? (Why is he hitting the girl?)/puellam-noun-girl/pulsat-verb-strike
+Marcus multos servos habet, sed paucos nummos habet (Marcus has many slaves, but few coins)/multos-adjective-many/servos-noun-slave/paucos-adjective-few/nummos-noun-coin
+Debeo te verberare (I ought to beat you)/Debeo-verb-ought/verberare-verb-beat
+Marcus saepe servos verberat (Marcus often beats his slaves)/servos-noun-slave/verberat-verb-beat
+Quid in oceano vides? (What do you (sg.) see in the ocean?)/oceano-noun-ocean/vides-verb-see
+Cur nautas verberant? (Why are they beating the sailors?)/nautas-noun-sailor/verberant-verb-beat
+Lucius nauta bonus est (Lucius is a good sailor)/nauta-noun-sailor/bonus-adjective-good
+Non habeo magnam pecuniam (I do not have much money)/magnam-adjective-great/pecuniam-noun-money/habeo-verb-have
+Non habemus magnam pecuniam (We do not have much money)/habemus-verb-have/magnam-adjective-great/pecuniam-noun-money
+Non habes magnam pecuniam (You (sg.) do not have much money)/habes-verb-have/magnam-adjective-great/pecuniam-noun-money
+Non habent magnam pecuniam (They do not have much money)/habent-verb-have/magnam-adjective-great/pecuniam-noun-money
+Quintus improbus servus probi domini est (Quintus is a wicked slave of a virtuous master)/improbus-adjective-wicked/probi-adjective-virtuous/domini-noun-master
+Quintus probus servus improbi domini est (Quintus is a virtuous slave of a wicked master)/probus-adjective-virtuous/improbi-adjective-wicked/domini-noun-master
