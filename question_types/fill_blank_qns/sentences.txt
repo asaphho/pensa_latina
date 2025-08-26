@@ -24,6 +24,9 @@ Quid debemus dare Marco? (What should we give to Marcus?)/debemus-verb-ought/dar
 Quid debeo dare Marco? (What should I give to Marcus?)/debeo-verb-ought/dare-verb-give/Marco-noun-Marcus
 Quid vides? (What do you (sg.) see?)/vides-verb-see
 Quid videtis? (What do you (pl.) see?)/videtis-verb-see
+Servus ancillam amat (The slave loves the maid)/Servus-noun-slave/ancillam-noun-maid/amat-verb-love
+Servum ancilla amat (The maid loves the slave)/Servum-noun-slave/ancilla-noun-maid/amat-verb-love
+Iulia Publium non amat, sed pecuniam Publii amat (Julia does not love Publius, but loves Publius' money)/Pulium-noun-Publius/pecuniam-noun-money/Publii-noun-Publius
 Oppida et viros oppidorum videmus (We see the towns and the men of the towns)/Oppida-noun-town/viros-noun-man/oppidorum-noun-town/videmus-verb-see
 Oppidum et viros oppidi videmus (We see the town and the men of the town)/Oppidum-noun-town/viros-noun-man/oppidi-noun-town/videmus-verb-see
 Debes dare nummum Quinto (You (sg.) should give the coin to Quintus)/Debes-verb-ought/dare-verb-give/nummum-noun-coin/Quinto-noun-Quintus
@@ -35,6 +38,8 @@ Marcus saepe servos verberat (Marcus often beats his slaves)/servos-noun-slave/v
 Quid in oceano vides? (What do you (sg.) see in the ocean?)/oceano-noun-ocean/vides-verb-see
 Cur nautas verberant? (Why are they beating the sailors?)/nautas-noun-sailor/verberant-verb-beat
 Lucius nauta bonus est (Lucius is a good sailor)/nauta-noun-sailor/bonus-adjective-good
+Viri Graeciae boni agricolae sunt (The men of Greece are good farmers)/Viri-noun-man/Graeciae-noun-Greece/boni-adjective-good/agricolae-noun-farmer
+Vir graecus bonus agricola est (The greek man is a good farmer)/Vir-noun-man/graecus-adjective-Greek/bonus-adjective-good/agricola-noun-farmer
 Non habeo magnam pecuniam (I do not have much money)/magnam-adjective-great/pecuniam-noun-money/habeo-verb-have
 Non habemus magnam pecuniam (We do not have much money)/habemus-verb-have/magnam-adjective-great/pecuniam-noun-money
 Non habes magnam pecuniam (You (sg.) do not have much money)/habes-verb-have/magnam-adjective-great/pecuniam-noun-money
