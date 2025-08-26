@@ -55,9 +55,7 @@ def display_question(word_and_numerical_choices: dict[str, str]) -> None:
     print('\ne: Exit exercise')
 
 
-def new_question(lines: list[str], from_english: bool = False) -> bool:
-    word_and_choices = pick_word_and_ans_choices(lines, from_english)
-    word_and_num_choices = assign_choices(word_and_choices)
+def test_question(word_and_num_choices: dict[str, str]) -> bool:
     display_question(word_and_num_choices)
     while True:
         player_input = input()
@@ -65,7 +63,7 @@ def new_question(lines: list[str], from_english: bool = False) -> bool:
             print('Correct!')
             return False
         elif player_input.strip() in ('1', '2', '3', '4'):
-            print(f'Sorry, the correct answer is "{word_and_choices["correct"]}"')
+            print(f'Sorry, the correct answer is "{word_and_num_choices[word_and_num_choices["correct"]]}"')
             return False
         elif player_input.strip().lower() == 'e':
             return True
@@ -73,7 +71,13 @@ def new_question(lines: list[str], from_english: bool = False) -> bool:
             print('Unrecognized input. Please input 1, 2, 3, or 4.')
 
 
-def begin_exercise(filenames: list[str] = None, mode: str = 'latin') -> None:
+def make_question(lines: list[str], from_english: bool) -> dict[str, str]:
+    word_and_choices = pick_word_and_ans_choices(lines, from_english)
+    word_and_num_choices = assign_choices(word_and_choices)
+    return word_and_num_choices
+
+
+def begin_exercise(filenames: list[str] = None, mode: str = 'latin', no_repeat: int = 10) -> None:
     if filenames is None:
         lines = open_files(*[file for file in os.listdir(VOCABULARY_FOLDER) if file.endswith('.txt')])
     else:
@@ -85,8 +89,15 @@ def begin_exercise(filenames: list[str] = None, mode: str = 'latin') -> None:
     else:
         params = [True, False]
     exit_loop = False
+    cannot_be_tested = []
     while not exit_loop:
-        exit_loop = new_question(lines, from_english=random.choice(params))
+        qn = make_question(lines, random.choice(params))
+        while qn['word'] in cannot_be_tested:
+            qn = make_question(lines, random.choice(params))
+        exit_loop = test_question(qn)
+        if len(cannot_be_tested) >= no_repeat:
+            cannot_be_tested.pop(0)
+        cannot_be_tested.append(qn['word'])
     print('Exercise terminated')
 
 
