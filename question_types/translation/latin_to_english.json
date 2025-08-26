@@ -96,7 +96,19 @@
             "Is Brundisium a town?",
             "Where is the town of Brundisium?",
             "Brundisium is a poor town.",
-            "Is Brundisium a poor town?"
+            "Is Brundisium a poor town?",
+            "Brundisium is not a small town."
+        ]
+    },
+    {
+        "sentence": "Brundisium parvum oppidum non est",
+        "correct": "Brundisium is not a small town.",
+        "wrong": [
+            "Is Brundisium a small town?",
+            "Brundisium is a small town.",
+            "Brundisium is not a poor town.",
+            "Is Brundisium not a town?",
+            "Brundisium is not a rich town."
         ]
     },
     {
