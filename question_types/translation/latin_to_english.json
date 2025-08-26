@@ -145,5 +145,16 @@
             "The Greek man is a poor sailor.",
             "The Greek man is a good tailor."
         ]
+    },
+    {
+        "sentence": "Claudia Iulium non amat, sed pecuniam Iulii amat",
+        "correct": "Claudia does not love Julius, but loves Julius' money.",
+        "wrong": [
+            "Claudia does not love Julius, but loves Julius' slave.",
+            "Claudia does not love Julius, but loves Julius' son.",
+            "Claudia does not love Julius, and Julius loves his money.",
+            "Julius does not love Claudia, but Claudia loves his money.",
+            "Julius does not love Claudia, but loves his money."
+        ]
     }
 ]
