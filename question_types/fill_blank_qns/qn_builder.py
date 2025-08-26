@@ -51,7 +51,7 @@ def display_question(qn_data: dict[str, str]) -> None:
     print(qn_data['qn_text'])
     for i in range(1, 5):
         print(f'{str(i)}: {qn_data[str(i)]}')
-    print('\ne: Terminate exercise')
+    print('\ne: Exit exercise')
 
 
 def test_question(qn_data: dict[str, str]) -> bool:
@@ -71,7 +71,7 @@ def test_question(qn_data: dict[str, str]) -> bool:
             print('Unrecognized input. Try again.')
 
 
-def begin_exercise():
+def begin_exercise(no_repeat: int = 10):
     with open(PATH_TO_SENTENCES, 'r') as f:
         lines = f.readlines()
     sentences = [ln.strip() for ln in lines if ln.strip() != '']
@@ -82,8 +82,16 @@ def begin_exercise():
     with open(verbs_path, 'r') as f:
         verbs: dict[str, list[str]] = json.load(f)
     exit_loop = False
+    cannot_test = []
     while not exit_loop:
         qn = make_question_from_random_sentence(sentences=sentences,
                                                 word_forms={'noun': nouns_adjs, 'adjective': nouns_adjs,
                                                             'verb': verbs})
+        while qn['qn_text'] in cannot_test:
+            qn = make_question_from_random_sentence(sentences=sentences,
+                                                    word_forms={'noun': nouns_adjs, 'adjective': nouns_adjs,
+                                                                'verb': verbs})
         exit_loop = test_question(qn)
+        if len(cannot_test) >= no_repeat:
+            cannot_test.pop(0)
+        cannot_test.append(qn['qn_text'])

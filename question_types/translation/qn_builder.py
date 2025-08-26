@@ -31,7 +31,7 @@ def display_question(qn_data: dict[str, str]) -> None:
     print(qn_data['qn_text'])
     for i in range(1, 5):
         print(f'{i}: {qn_data[str(i)]}')
-    print('\ne: Terminate exercise')
+    print('\ne: Exit exercise')
 
 
 def test_question(qn_data: dict[str, str]) -> bool:
@@ -51,11 +51,18 @@ def test_question(qn_data: dict[str, str]) -> bool:
             print('Unrecognized input. Try again.')
 
 
-def begin_exercise(from_english: bool = False) -> None:
+def begin_exercise(from_english: bool = False, no_repeat: int = 10) -> None:
     filepath = english_to_latin_path if from_english else latin_to_english_path
     with open(filepath, 'r') as f:
         sentences_list = json.load(f)
     exit_loop = False
+    cannot_test = []
     while not exit_loop:
         qn = choose_sentence_and_make_question(sentences=sentences_list)
+        while qn['qn_text'] in cannot_test:
+            qn = choose_sentence_and_make_question(sentences=sentences_list)
         exit_loop = test_question(qn)
+        if len(cannot_test) >= no_repeat:
+            cannot_test.pop(0)
+        cannot_test.append(qn['qn_text'])
+
