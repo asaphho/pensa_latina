@@ -317,5 +317,27 @@
         "dominum",
         "domino",
         "dominos"
+    ],
+    "farmer": [
+        "agricolae",
+        "agricolarum",
+        "agricolam",
+        "agricolis",
+        "agricola",
+        "agricolas"
+    ],
+    "Greek": [
+        "graecos",
+        "graeca",
+        "graeco",
+        "graecarum",
+        "graecis",
+        "graecae",
+        "graecas",
+        "graeci",
+        "graecus",
+        "graecum",
+        "graecam",
+        "graecorum"
     ]
 }
