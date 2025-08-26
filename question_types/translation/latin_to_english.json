@@ -28,6 +28,18 @@
         ]
     },
     {
+        "sentence": "Oppida video",
+        "correct": "I see the towns.",
+        "wrong": [
+            "I see the town.",
+            "He sees the town.",
+            "We see the towns.",
+            "They see the door.",
+            "I see the door.",
+            "I see the field."
+        ]
+    },
+    {
         "sentence": "Magnum fluvium videt.",
         "correct": "He sees the great river.",
         "wrong": [
@@ -38,6 +50,30 @@
             "He sees many rivers.",
             "We see the great river.",
             "He sees the great bath."
+        ]
+    },
+    {
+        "sentence": "Multos fluvios videt",
+        "correct": "He sees many rivers.",
+        "wrong": [
+            "He sees the great river.",
+            "I see many rivers.",
+            "I see many baths.",
+            "He sees great rivers.",
+            "We see great rivers.",
+            "I see great rivers."
+        ]
+    },
+    {
+        "sentence": "Magnos fluvios videmus",
+        "correct": "We see great rivers.",
+        "wrong": [
+            "He sees many rivers.",
+            "I see great rivers.",
+            "We see many rivers.",
+            "They see great rivers.",
+            "We see great baths.",
+            "We see a great river."
         ]
     },
     {
@@ -61,6 +97,41 @@
             "Where is the town of Brundisium?",
             "Brundisium is a poor town.",
             "Is Brundisium a poor town?"
+        ]
+    },
+    {
+        "sentence": "Marcus Quintusque Iuliam amant, sed Publium Iulia amat",
+        "correct": "Marcus and Quintus love Julia, but Julia loves Publius.",
+        "wrong": [
+            "Marcus and Quintus love Julia, but Publius does not love her.",
+            "Marcus the fifth loves Julia, but Julia loves Publius.",
+            "Marcus and Quintus love Julia. Publius loves Julia too.",
+            "Marcus Quintusque loves Julia, but Julia loves Publius."
+        ]
+    },
+    {
+        "sentence": "Viri Graeciae boni nautae sunt",
+        "correct": "The men of Greece are good sailors.",
+        "wrong": [
+            "The men of Greece are good soldiers.",
+            "The men of Greece are bad sailors.",
+            "The boys of Greece are good singers.",
+            "The Greek man is a good sailor.",
+            "The men of Greece are good farmers.",
+            "The men of Greece are poor sailors.",
+            "The men of Greece are poor soldiers."
+        ]
+    },
+    {
+        "sentence": "Vir graecus bonus nauta est",
+        "correct": "The Greek man is a good sailor.",
+        "wrong": [
+            "The men of Greece are good sailors.",
+            "The men of Greece are good soldiers.",
+            "The Greek man is a benevolent sailor.",
+            "The Greek man is a good poet.",
+            "The Greek man is a poor sailor.",
+            "The Greek man is a good tailor."
         ]
     }
 ]
