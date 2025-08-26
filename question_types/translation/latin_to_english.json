@@ -122,6 +122,26 @@
         ]
     },
     {
+        "sentence": "Marcus Quintusque Iuliam amant. Publius quoque Iuliam amat",
+        "correct": "Marcus and Quintus love Julia. Publius also loves Julia.",
+        "wrong": [
+            "Marcus and Quintus love Julia. Publius does not love Julia.",
+            "Marcus Quintusque loves Julia. Publius also loves Julia.",
+            "Julia loves Marcus and Quintus. Publius loves Julia.",
+            "Marcus and Quintus praise Julia. Publius also praises Julia."
+        ]
+    },
+    {
+        "sentence": "Marcus Quintusque Iuliam laudant, sed Publius Iuliam non laudat",
+        "correct": "Marcus and Quintus praise Julia, but Publius is not praising Julia.",
+        "wrong": [
+            "Marcus and Quintus love Julia, but Publius does not love Julia.",
+            "Marcus Quintusque praise Julia, but Publius is not praising Julia.",
+            "Julia praises Marcus and Quintus, but Publius praises Julia.",
+            "Marcus and Quintus save Julia, but Julia does not save Publius."
+        ]
+    },
+    {
         "sentence": "Viri Graeciae boni nautae sunt",
         "correct": "The men of Greece are good sailors.",
         "wrong": [
@@ -155,6 +175,26 @@
             "Claudia does not love Julius, and Julius loves his money.",
             "Julius does not love Claudia, but Claudia loves his money.",
             "Julius does not love Claudia, but loves his money."
+        ]
+    },
+    {
+        "sentence": "Claudia Iulium non amat, et Iulius pecuniam amat",
+        "correct": "Claudia does not love Julius, and Julius loves money.",
+        "wrong": [
+            "Claudia does not love Julius, but loves Julius' money.",
+            "Julius does not love Claudia, but loves his own money.",
+            "Claudia does not praise Julius, but praises his money.",
+            "Claudia does not desire Julius, and Julius desires money."
+        ]
+    },
+    {
+        "sentence": "Claudia pecuniam Iulii amat, sed Iulium amatne",
+        "correct": "Claudia loves Jiulius' money, but does she love Julius?",
+        "wrong": [
+            "Claudia loves Julius' money, but she does not love Julius.",
+            "Julius loves Claudia's money, but does she love Julius?",
+            "Claudia loves Julius and his money, and Julius loves her.",
+            "Claudia loves Julius and his money, but does Julius love her?"
         ]
     }
 ]

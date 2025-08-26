@@ -37,6 +37,9 @@ Debeo te verberare (I ought to beat you)/Debeo-verb-ought/verberare-verb-beat
 Marcus saepe servos verberat (Marcus often beats his slaves)/servos-noun-slave/verberat-verb-beat
 Quid in oceano vides? (What do you (sg.) see in the ocean?)/oceano-noun-ocean/vides-verb-see
 Cur nautas verberant? (Why are they beating the sailors?)/nautas-noun-sailor/verberant-verb-beat
+Cur nautam verberant? (Why are they beating the sailor?)/nautam-noun-sailor/verberant-verb-beat
+Cur nautas verberat? (Why is he beating the sailors?)/nautas-noun-sailor/verberat-verb-beat
+Cur nautam verberat? (Why is he beating the sailor?)/nautam-noun-sailor/verberat-verb-beat
 Lucius nauta bonus est (Lucius is a good sailor)/nauta-noun-sailor/bonus-adjective-good
 Viri Graeciae boni agricolae sunt (The men of Greece are good farmers)/Viri-noun-man/Graeciae-noun-Greece/boni-adjective-good/agricolae-noun-farmer
 Vir graecus bonus agricola est (The greek man is a good farmer)/Vir-noun-man/graecus-adjective-Greek/bonus-adjective-good/agricola-noun-farmer
