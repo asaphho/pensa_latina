@@ -11,5 +11,184 @@
             "Domum video.",
             "Fluvium video."
         ]
+    },
+    {
+        "sentence": "We see the town.",
+        "correct": "Oppidum videmus.",
+        "wrong": [
+            "Oppidum video.",
+            "Oppidum videt.",
+            "Oppida videmus.",
+            "Oppidum videtis.",
+            "Oppidum vident.",
+            "Domum videmus.",
+            "Fluvium videmus."
+        ]
+    },
+    {
+        "sentence": "I see the towns.",
+        "correct": "Oppida video.",
+        "wrong": [
+            "Oppidum video.",
+            "Oppida videt.",
+            "Oppida videmus.",
+            "Oppida vident.",
+            "Insulam video.",
+            "Fluvios video."
+        ]
+    },
+    {
+        "sentence": "He sees the great river.",
+        "correct": "Magnum fluvium videt.",
+        "wrong": [
+            "Magnos fluvios videt.",
+            "Magnum fluvium video.",
+            "Magnum fluvium videmus.",
+            "Multos fluvios videt.",
+            "Magnum balneum videt.",
+            "Magnum fluvium vident."
+        ]
+    },
+    {
+        "sentence": "He sees many rivers.",
+        "correct": "Multos fluvios videt.",
+        "wrong": [
+            "Magnum fluvium videt.",
+            "Multos fluvios video.",
+            "Multos fluvios videmus.",
+            "Magnos fluvios videt.",
+            "Multos fluvios vident.",
+            "Multas insulas videt."
+        ]
+    },
+    {
+        "sentence": "We see great rivers.",
+        "correct": "Magnos fluvios videmus.",
+        "wrong": [
+            "Multos fluvios videmus.",
+            "Magnos fluvios video.",
+            "Magnos fluvios videt.",
+            "Magnos fluvios vident.",
+            "Magnum fluvium videmus.",
+            "Magnas insulas videmus."
+        ]
+    },
+    {
+        "sentence": "They love the islands of Greece.",
+        "correct": "Amant insulas Graeciae.",
+        "wrong": [
+            "Amat insulas Graeciae.",
+            "Amo insulas Graeciae.",
+            "Amamus insulas Graeciae.",
+            "Amant insulam Graeciae.",
+            "Amant oppida Graeciae.",
+            "Amant insulas Romae."
+        ]
+    },
+    {
+        "sentence": "Is Brundisium a small town?",
+        "correct": "Estne parvum oppidum Brundisium?",
+        "wrong": [
+            "Brundisium parvum oppidum est.",
+            "Estne oppidum Brundisium?",
+            "Brundisium parvum oppidum non est.",
+            "Estne pauperam oppidum Brundisium?",
+            "Estne parvum oppidum Roma?"
+        ]
+    },
+    {
+        "sentence": "Brundisium is not a small town.",
+        "correct": "Brundisium parvum oppidum non est.",
+        "wrong": [
+            "Estne parvum oppidum Brundisium?",
+            "Brundisium parvum oppidum est.",
+            "Brundisium pauperam oppidum non est.",
+            "Roma parvum oppidum non est.",
+            "Brundisium magnum oppidum non est."
+        ]
+    },
+    {
+        "sentence": "Marcus and Quintus love Julia, but Julia loves Publius.",
+        "correct": "Marcus Quintusque Iuliam amant, sed Publium Iulia amat.",
+        "wrong": [
+            "Marcus Quintusque Iuliam amant. Publius quoque Iuliam amat.",
+            "Marcus Quintusque Iuliam laudant, sed Publium Iulia amat.",
+            "Marcus Quintusque Iuliam amant, sed Iuliam Publius non amat.",
+            "Marcus et Quintus Iuliam amant, sed Publium Iulia amat."
+        ]
+    },
+    {
+        "sentence": "Marcus and Quintus love Julia. Publius also loves Julia.",
+        "correct": "Marcus Quintusque Iuliam amant. Publius quoque Iuliam amat.",
+        "wrong": [
+            "Marcus Quintusque Iuliam amant, sed Publium Iulia amat.",
+            "Marcus Quintusque Iuliam laudant. Publius quoque Iuliam laudat.",
+            "Marcus Quintusque Iuliam non amant. Publius quoque Iuliam amat.",
+            "Marcus et Quintus Iuliam amant. Publius quoque Iuliam amat."
+        ]
+    },
+    {
+        "sentence": "Marcus and Quintus praise Julia, but Publius is not praising Julia.",
+        "correct": "Marcus Quintusque Iuliam laudant, sed Publius Iuliam non laudat.",
+        "wrong": [
+            "Marcus Quintusque Iuliam amant, sed Publius Iuliam non amat.",
+            "Marcus Quintusque Iuliam laudant. Publius quoque Iuliam laudat.",
+            "Iulia Marcum Quintumque laudat, sed Publius Iuliam laudat.",
+            "Marcus Quintusque Iuliam servant, sed Iulia Publium non servat."
+        ]
+    },
+    {
+        "sentence": "The men of Greece are good sailors.",
+        "correct": "Viri Graeciae boni nautae sunt.",
+        "wrong": [
+            "Vir graecus bonus nauta est.",
+            "Viri Graeciae mali nautae sunt.",
+            "Pueri Graeciae boni nautae sunt.",
+            "Viri Graeciae boni milites sunt.",
+            "Viri Graeciae boni agricolae sunt.",
+            "Viri Graeciae pauperes nautae sunt."
+        ]
+    },
+    {
+        "sentence": "The Greek man is a good sailor.",
+        "correct": "Vir graecus bonus nauta est.",
+        "wrong": [
+            "Viri Graeciae boni nautae sunt.",
+            "Vir graecus malus nauta est.",
+            "Vir graecus bonus miles est.",
+            "Vir graecus bonus poeta est.",
+            "Vir graecus bonus nauta non est.",
+            "Vir romanus bonus nauta est."
+        ]
+    },
+    {
+        "sentence": "Claudia does not love Julius, but loves Julius' money.",
+        "correct": "Claudia Iulium non amat, sed pecuniam Iulii amat.",
+        "wrong": [
+            "Claudia Iulium non amat, sed servum Iulii amat.",
+            "Claudia Iulium non amat, et Iulius pecuniam amat.",
+            "Iulius Claudiam non amat, sed pecuniam Claudiae amat.",
+            "Claudia Iulium non amat, sed filium Iulii amat."
+        ]
+    },
+    {
+        "sentence": "Claudia does not love Julius, and Julius loves money.",
+        "correct": "Claudia Iulium non amat, et Iulius pecuniam amat.",
+        "wrong": [
+            "Claudia Iulium non amat, sed pecuniam Iulii amat.",
+            "Iulius Claudiam non amat, et Claudia pecuniam amat.",
+            "Claudia Iulium non laudat, et Iulius pecuniam laudat.",
+            "Claudia Iulium non amat, et Iulius pecuniam non amat."
+        ]
+    },
+    {
+        "sentence": "Claudia loves Julius' money, but does she love Julius?",
+        "correct": "Claudia pecuniam Iulii amat, sed Iulium amatne?",
+        "wrong": [
+            "Claudia Iulium non amat, sed pecuniam Iulii amat.",
+            "Iulius pecuniam Claudiae amat, sed Claudiam amatne?",
+            "Claudia pecuniam Iulii amat, et Iulium amat.",
+            "Claudia pecuniam Iulii amat, sed Iulius eam amatne?"
+        ]
     }
 ]
