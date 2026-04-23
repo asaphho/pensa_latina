@@ -1,0 +1,26 @@
+{
+  "amo": {
+    "principal_parts": ["amo", "amare", "amavi", "amatum"],
+    "conjugation": "first",
+    "eng": "to love, like",
+    "irregularities": {}
+  },
+  "cogito": {
+    "principal_parts": ["cogito", "cogitare", "cogitavi", "cogitatum"],
+    "conjugation": "first",
+    "eng": "to think, ponder, consider, plan",
+    "irregularities": {}
+  },
+  "debeo": {
+    "principal_parts": ["debeo", "debere", "debui", "debitum"],
+    "conjugation": "second",
+    "eng": "to owe; ought, must, should",
+    "irregularities": {}
+  },
+  "do": {
+    "principal_parts": ["do", "dare", "dedi", "datum"],
+    "conjugation": "first",
+    "eng": "to give, offer",
+    "irregularities": {}
+  }
+}
