@@ -3,24 +3,76 @@
     "principal_parts": ["amo", "amare", "amavi", "amatum"],
     "conjugation": "first",
     "eng": "to love, like",
-    "irregularities": {}
+    "idioms": {"amabo te": "please"}
   },
   "cogito": {
     "principal_parts": ["cogito", "cogitare", "cogitavi", "cogitatum"],
     "conjugation": "first",
-    "eng": "to think, ponder, consider, plan",
-    "irregularities": {}
+    "eng": "to think, ponder, consider, plan"
   },
   "debeo": {
     "principal_parts": ["debeo", "debere", "debui", "debitum"],
     "conjugation": "second",
-    "eng": "to owe; ought, must, should",
-    "irregularities": {}
+    "eng": "to owe; ought, must, should"
   },
   "do": {
     "principal_parts": ["do", "dare", "dedi", "datum"],
     "conjugation": "first",
-    "eng": "to give, offer",
-    "irregularities": {}
+    "eng": "to give, offer"
+  },
+  "erro": {
+    "principal_parts": ["erro", "errare", "erravi", "erratum"],
+    "conjugation": "first",
+    "eng": "to wander; err, go astray, make a mistake, be mistaken"
+  },
+  "laudo": {
+    "principal_parts": ["laudo", "laudare", "laudavi", "laudatum"],
+    "conjugation": "first",
+    "eng": "to praise"
+  },
+  "moneo": {
+    "principal_parts": ["moneo", "monere", "monui", "monitum"],
+    "conjugation": "second",
+    "eng": "to remind, advise, warn"
+  },
+  "salveo": {
+    "principal_parts": ["salveo", "salvere"],
+    "conjugation": "second",
+    "eng": "to be well, be in good health"
+  },
+  "salve": {
+    "principal_parts": ["salve", "salvete"],
+    "conjugation": "second",
+    "eng": "hello, greetings!"
+  },
+  "servo": {
+    "principal_parts": ["servo", "servare", "servavi", "servatum"],
+    "conjugation": "first",
+    "eng": "to preserve, save, keep, guard"
+  },
+  "conservo": {
+    "principal_parts": ["conservo", "conservare", "conservavi", "conservatum"],
+    "conjugation": "first",
+    "eng": "a stronger form of servo, to preserve, conserve, maintain"
+  },
+  "terreo": {
+    "principal_parts": ["terreo", "terrere", "terrui", "territum"],
+    "conjugation": "second",
+    "eng": "to frighten, terrify"
+  },
+  "valeo": {
+    "principal_parts": ["valeo", "valere", "valui", "valiturum"],
+    "conjugation": "second",
+    "eng": "to be strong, have power; be well"
+  },
+  "video": {
+    "principal_parts": ["video", "videre", "vidi", "visum"],
+    "conjugation": "second",
+    "eng": "to see; observe, understand"
+  },
+  "voco": {
+    "principal_parts": ["voco", "vocare", "vocavi", "vocatum"],
+    "conjugation": "first",
+    "eng": "to call, summon"
   }
 }

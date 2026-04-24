@@ -1,8 +1,86 @@
 {
   "nihil": {
-    "indeclinable": true,
     "gender": "n",
-    "eng": "nothing",
-    "irregularities": {}
+    "declension": "indeclinable",
+    "eng": "nothing"
+  },
+  "fama": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "famae",
+    "eng": "rumor, report; fame, reputation"
+  },
+  "forma": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "formae",
+    "eng": "form, shape; beauty"
+  },
+  "fortuna": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "fortunae",
+    "eng": "fortune, luck"
+  },
+  "ira": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "irae",
+    "eng": "ire, anger"
+  },
+  "nauta": {
+    "gender": "m",
+    "declension": "first",
+    "gen_sg": "nautae",
+    "eng": "sailor"
+  },
+  "patria": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "patriae",
+    "eng": "fatherland, native land, (one's) country"
+  },
+  "pecunia": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "pecuniae",
+    "eng": "money"
+  },
+  "philosophia": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "philosophiae",
+    "eng": "philosophy"
+  },
+  "poena": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "poenae",
+    "eng": "penalty, punishment",
+    "idioms": {"poenas dare": "to pay the penalty"}
+  },
+  "poeta": {
+    "gender": "m",
+    "declension": "first",
+    "gen_sg": "poetae",
+    "eng": "poet"
+  },
+  "porta": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "portae",
+    "eng": "gate"
+  },
+  "puella": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "puellae",
+    "eng": "girl"
+  },
+  "rosa": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "rosae",
+    "eng": "rose"
   }
 }
