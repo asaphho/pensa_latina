@@ -1,8 +1,11 @@
 {
   "me": {
-    "eng": "me, myself"
+    "eng": "me, myself (used only in the ablative and accusative singular)"
   },
   "quid": {
     "eng": "what"
+  },
+  "te": {
+    "eng": "you, yourself (used only in the ablative and accusative singular)"
   }
 }

@@ -1,0 +1,18 @@
+{
+  "sine": {
+    "cases": ["abl"],
+    "eng": "without"
+  },
+  "de": {
+    "cases": ["abl"],
+    "eng": "down from, from; concerning, about"
+  },
+  "in": {
+    "cases": ["abl"],
+    "eng": "in, on"
+  },
+  "propter": {
+    "cases": ["acc"],
+    "eng": "on account of, because of"
+  }
+}

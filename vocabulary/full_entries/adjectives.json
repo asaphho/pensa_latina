@@ -1,0 +1,163 @@
+{
+  "antiquus": {
+    "fem_nom_sg": "antiqua",
+    "neut_nom_sg": "antiquum",
+    "declension": "first/second",
+    "eng": "ancient, old-time"
+  },
+  "magnus": {
+    "fem_nom_sg": "magna",
+    "neut_nom_sg": "magnum",
+    "declension": "first/second",
+    "eng": "large, great; important"
+  },
+  "meus": {
+    "fem_nom_sg": "mea",
+    "neut_nom_sg": "meum",
+    "declension": "first/second",
+    "eng": "my",
+    "irregularities": [
+      {
+        "case": "voc",
+        "number": "sg",
+        "form": "mi"
+      }
+    ]
+  },
+  "multus": {
+    "fem_nom_sg": "multa",
+    "neut_nom_sg": "multum",
+    "declension": "first/second",
+    "eng": "much, many"
+  },
+  "tuus": {
+    "fem_nom_sg": "tua",
+    "neut_nom_sg": "tuum",
+    "declension": "first/second",
+    "eng": "your (speaking to one person)"
+  },
+  "avarus": {
+    "fem_nom_sg": "avara",
+    "neut_nom_sg": "avarum",
+    "declension": "first/second",
+    "eng": "greedy, avaricious"
+  },
+  "pauci": {
+    "fem_nom_pl": "paucae",
+    "neut_nom_pl": "pauca",
+    "declension": "first/second",
+    "eng": "usually pl. few, a few"
+  },
+  "Romanus": {
+    "fem_nom_sg": "Romana",
+    "neut_nom_sg": "Romanum",
+    "declension": "first/second",
+    "eng": "Roman"
+  },
+  "bellus": {
+    "fem_nom_sg": "bella",
+    "neut_nom_sg": "bellum",
+    "declension": "first/second",
+    "eng": "pretty, handsome, charming"
+  },
+  "bonus": {
+    "fem_nom_sg": "bona",
+    "neut_nom_sg": "bonum",
+    "declension": "first/second",
+    "eng": "good, kind"
+  },
+  "humanus": {
+    "fem_nom_sg": "humana",
+    "neut_nom_sg": "humanum",
+    "declension": "first/second",
+    "eng": "pertaining to man, human; humane, kind; refined, cultivated"
+  },
+  "malus": {
+    "fem_nom_sg": "mala",
+    "neut_nom_sg": "malum",
+    "declension": "first/second",
+    "eng": "bad, wicked, evil"
+  },
+  "parvus": {
+    "fem_nom_sg": "parva",
+    "neut_nom_sg": "parvum",
+    "declension": "first/second",
+    "eng": "small, little"
+  },
+  "stultus": {
+    "fem_nom_sg": "stulta",
+    "neut_nom_sg": "stultum",
+    "declension": "first/second",
+    "eng": "foolish"
+  },
+  "verus": {
+    "fem_nom_sg": "vera",
+    "neut_nom_sg": "verum",
+    "declension": "first/second",
+    "eng": "true, real, proper"
+  },
+  "liber": {
+    "fem_nom_sg": "libera",
+    "neut_nom_sg": "liberum",
+    "declension": "first/second",
+    "eng": "free"
+  },
+  "noster": {
+    "fem_nom_sg": "nostra",
+    "neut_nom_sg": "nostrum",
+    "declension": "first/second",
+    "eng": "our, ours"
+  },
+  "pulcher": {
+    "fem_nom_sg": "pulchra",
+    "neut_nom_sg": "pulchrum",
+    "declension": "first/second",
+    "eng": "beautiful, handsome; fine"
+  },
+  "sanus": {
+    "fem_nom_sg": "sana",
+    "neut_nom_sg": "sanum",
+    "declension": "first/second",
+    "eng": "sound, healthy, sane"
+  },
+  "satis": {
+    "declension": "indeclinable",
+    "eng": "enough, sufficient"
+  },
+  "Graecus": {
+    "fem_nom_sg": "Graeca",
+    "neut_nom_sg": "Graecum",
+    "declension": "first/second",
+    "eng": "Greek"
+  },
+  "perpetuus": {
+    "fem_nom_sg": "perpetua",
+    "neut_nom_sg": "perpetuum",
+    "declension": "first/second",
+    "eng": "perpetual, lasting, uninterrupted, continuous"
+  },
+  "plenus": {
+    "fem_nom_sg": "plena",
+    "neut_nom_sg": "plenum",
+    "declension": "first/second",
+    "eng": "full, abundant, generous"
+  },
+  "salvus": {
+    "fem_nom_sg": "salva",
+    "neut_nom_sg": "salvum",
+    "declension": "first/second",
+    "eng": "safe, sound"
+  },
+  "secundus": {
+    "fem_nom_sg": "secunda",
+    "neut_nom_sg": "secundum",
+    "declension": "first/second",
+    "eng": "second; favorable"
+  },
+  "vester": {
+    "fem_nom_sg": "vestra",
+    "neut_nom_sg": "vestrum",
+    "declension": "first/second",
+    "eng": "your (when addressing more than one person)"
+  }
+}

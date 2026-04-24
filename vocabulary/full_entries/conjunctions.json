@@ -1,5 +1,23 @@
 {
   "si": {
     "eng": "if"
+  },
+  "et": {
+    "eng": "and; even; et ... et, both... and"
+  },
+  "sed": {
+    "eng": "but"
+  },
+  "igitur": {
+    "eng": "therefore, consequently"
+  },
+  "quando": {
+    "eng": "when",
+    "idioms": {
+      "si quando": "if ever"
+    }
+  },
+  "ubi": {
+    "eng": "where?"
   }
 }

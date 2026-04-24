@@ -3,7 +3,9 @@
     "principal_parts": ["amo", "amare", "amavi", "amatum"],
     "conjugation": "first",
     "eng": "to love, like",
-    "idioms": {"amabo te": "please"}
+    "idioms": {
+      "amabo te": "please"
+    }
   },
   "cogito": {
     "principal_parts": ["cogito", "cogitare", "cogitavi", "cogitatum"],
@@ -74,5 +76,65 @@
     "principal_parts": ["voco", "vocare", "vocavi", "vocatum"],
     "conjugation": "first",
     "eng": "to call, summon"
+  },
+  "habeo": {
+    "principal_parts": ["habeo", "habere", "habui", "habitum"],
+    "conjugation": "second",
+    "eng": "to have, hold, possess; consider, regard"
+  },
+  "satio": {
+    "principal_parts": ["satio", "satiare", "satiavi", "satiatum"],
+    "conjugation": "first",
+    "eng": "to satisfy, sate"
+  },
+  "iuvo": {
+    "principal_parts": ["iuvo", "iuvare", "iuvi", "iutum"],
+    "conjugation": "first",
+    "eng": "to help, aid, assist; please"
+  },
+  "adiuvo": {
+    "principal_parts": ["adiuvo", "adiuvare", "adiuvi", "adiutum"],
+    "conjugation": "first",
+    "eng": "to help, aid, assist; please"
+  },
+  "sum": {
+    "principal_parts": ["sum", "esse", "fui", "futurum"],
+    "conjugation": "irregular",
+    "eng": "to be, exist"
+  },
+  "ceno": {
+    "principal_parts": ["ceno", "cenare", "cenavi", "cenatum"],
+    "conjugation": "first",
+    "eng": "to dine"
+  },
+  "culpo": {
+    "principal_parts": ["culpo", "culpare", "culpavi", "culpatum"],
+    "conjugation": "first",
+    "eng": "to blame, censure"
+  },
+  "maneo": {
+    "principal_parts": ["maneo", "manere", "mansi", "mansum"],
+    "conjugation": "second",
+    "eng": "to remain, stay, stay behind, abide, continue"
+  },
+  "remaneo": {
+    "principal_parts": ["remaneo", "remanere", "remansi", "remansum"],
+    "conjugation": "second",
+    "eng": "to remain, stay, stay behind, abide, continue"
+  },
+  "supero": {
+    "principal_parts": ["supero", "superare", "superavi", "superatum"],
+    "conjugation": "first",
+    "eng": "to be above, have the upper hand, surpass; overcome, conquer"
+  },
+  "possum": {
+    "principal_parts": ["possum", "posse", "potui"],
+    "conjugation": "irregular",
+    "eng": "to be able, can, could, have power"
+  },
+  "tolero": {
+    "principal_parts": ["tolero", "tolerare", "toleravi", "toleratum"],
+    "conjugation": "first",
+    "eng": "to bear, endure"
   }
 }

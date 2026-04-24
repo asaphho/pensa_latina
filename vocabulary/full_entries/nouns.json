@@ -57,7 +57,9 @@
     "declension": "first",
     "gen_sg": "poenae",
     "eng": "penalty, punishment",
-    "idioms": {"poenas dare": "to pay the penalty"}
+    "idioms": {
+      "poenas dare": "to pay the penalty"
+    }
   },
   "poeta": {
     "gender": "m",
@@ -82,5 +84,368 @@
     "declension": "first",
     "gen_sg": "rosae",
     "eng": "rose"
+  },
+  "sententia": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "sententiae",
+    "eng": "feeling, thought, opinion, vote, sentence"
+  },
+  "vita": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "vitae",
+    "eng": "life; mode of life"
+  },
+  "ager": {
+    "gender": "m",
+    "declension": "second",
+    "gen_sg": "agri",
+    "eng": "field, farm"
+  },
+  "agricola": {
+    "gender": "m",
+    "declension": "first",
+    "gen_sg": "agricolae",
+    "eng": "farmer"
+  },
+  "amicus": {
+    "gender": "m",
+    "declension": "second",
+    "gen_sg": "amici",
+    "eng": "friend (male)"
+  },
+  "amica": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "amicae",
+    "eng": "friend (female)"
+  },
+  "femina": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "feminae",
+    "eng": "woman"
+  },
+  "filia": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "filiae",
+    "eng": "daughter",
+    "irregularities": [
+      {
+        "case": "dat",
+        "number": "pl",
+        "form": "filiabus"
+      },
+      {
+        "case": "abl",
+        "number": "pl",
+        "form": "filiabus"
+      }
+    ]
+  },
+  "filius": {
+    "gender": "m",
+    "declension": "second",
+    "gen_sg": "filii",
+    "eng": "son"
+  },
+  "numerus": {
+    "gender": "m",
+    "declension": "second",
+    "gen_sg": "numeri",
+    "eng": "number"
+  },
+  "populus": {
+    "gender": "m",
+    "declension": "second",
+    "gen_sg": "populi",
+    "eng": "the people, a people, a nation"
+  },
+  "puer": {
+    "gender": "m",
+    "declension": "second",
+    "gen_sg": "pueri",
+    "eng": "boy; pl. boys, children"
+  },
+  "sapientia": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "sapientiae",
+    "eng": "wisdom"
+  },
+  "vir": {
+    "gender": "m",
+    "declension": "second",
+    "gen_sg": "viri",
+    "eng": "man, hero"
+  },
+  "basium": {
+    "gender": "n",
+    "declension": "second",
+    "gen_sg": "basii",
+    "eng": "kiss"
+  },
+  "bellum": {
+    "gender": "n",
+    "declension": "second",
+    "gen_sg": "belli",
+    "eng": "war"
+  },
+  "consilium": {
+    "gender": "n",
+    "declension": "second",
+    "gen_sg": "consilii",
+    "eng": "plan, purpose,counsel, advice, judgment, wisdom"
+  },
+  "cura": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "curae",
+    "eng": "care, attention, caution, anxiety"
+  },
+  "donum": {
+    "gender": "n",
+    "declension": "second",
+    "gen_sg": "boni",
+    "eng": "gift, present"
+  },
+  "exitium": {
+    "gender": "n",
+    "declension": "second",
+    "gen_sg": "exitii",
+    "eng": "destruction"
+  },
+  "magister": {
+    "gender": "m",
+    "declension": "second",
+    "gen_sg": "magistri",
+    "eng": "schoolmaster, teacher, master"
+  },
+  "magistra": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "magistrae",
+    "eng": "schoolmistress, teacher, mistress"
+  },
+  "mora": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "morae",
+    "eng": "delay"
+  },
+  "oculus": {
+    "gender": "m",
+    "declension": "second",
+    "gen_sg": "oculi",
+    "eng": "eye"
+  },
+  "officium": {
+    "gender": "n",
+    "declension": "second",
+    "gen_sg": "officii",
+    "eng": "duty, service"
+  },
+  "otium": {
+    "gender": "n",
+    "declension": "second",
+    "gen_sg": "otii",
+    "eng": "leisure, peace"
+  },
+  "periculum": {
+    "gender": "n",
+    "declension": "second",
+    "gen_sg": "periculi",
+    "eng": "danger, risk"
+  },
+  "remedium": {
+    "gender": "n",
+    "declension": "second",
+    "gen_sg": "remedii",
+    "eng": "cure, remedy"
+  },
+  "stultus": {
+    "gender": "m",
+    "declension": "second",
+    "gen_sg": "stulti",
+    "eng": "a fool"
+  },
+  "adulescentia": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "adulescentiae",
+    "eng": "youth, young manhood; youthfulness"
+  },
+  "animus": {
+    "gender": "m",
+    "declension": "second",
+    "gen_sg": "animi",
+    "eng": "soul, spirit, mind; animi, animarum, high spirits, pride, courage"
+  },
+  "caelum": {
+    "gender": "n",
+    "declension": "second",
+    "gen_sg": "caeli",
+    "eng": "sky, heaven"
+  },
+  "culpa": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "culpae",
+    "eng": "fault, blame"
+  },
+  "gloria": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "gloriae",
+    "end": "glory, fame"
+  },
+  "verbum": {
+    "gender": "n",
+    "declension": "second",
+    "gen_sg": "verbi",
+    "eng": "word"
+  },
+  "satis": {
+    "gender": "n",
+    "declension": "indeclinable",
+    "eng": "enough, sufficient"
+  },
+  "deus": {
+    "gender": "m",
+    "declension": "second",
+    "gen_sg": "dei",
+    "eng": "god",
+    "irregularities": [
+      {
+        "case": "voc",
+        "number": "sg",
+        "form": "deus"
+      },
+      {
+        "case": "nom",
+        "number": "pl",
+        "form": "di"
+      },
+      {
+        "case": "dat",
+        "number": "pl",
+        "form": "dis"
+      },
+      {
+        "case": "abl",
+        "number": "pl",
+        "form": "dis"
+      }
+    ]
+  },
+  "dea": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "deae",
+    "eng": "goddess",
+    "irregularities": [
+      {
+        "case": "dat",
+        "number": "pl",
+        "form": "diabus"
+      },
+      {
+        "case": "abl",
+        "number": "pl",
+        "form": "diabus"
+      }
+    ]
+  },
+  "discipulus": {
+    "gender": "m",
+    "declension": "second",
+    "gen_sg": "discipuli",
+    "eng": "learner, pupil, student (male)"
+  },
+  "discipula": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "discipulae",
+    "eng": "learner, pupil, student (female)"
+  },
+  "insidiae": {
+    "gender": "f",
+    "declension": "first",
+    "gen_pl": "insidiarum",
+    "eng": "ambush, plot, treachery"
+  },
+  "liber": {
+    "gender": "m",
+    "declension": "second",
+    "gen_sg": "libri",
+    "eng": "book"
+  },
+  "tyrannus": {
+    "gender": "m",
+    "declension": "second",
+    "gen_sg": "tyranni",
+    "eng": "absolute ruler, tyrant"
+  },
+  "vitium": {
+    "gender": "n",
+    "declension": "second",
+    "gen_sg": "vitii",
+    "eng": "fault, crime, vice"
+  },
+  "Graecus": {
+    "gender": "m",
+    "declension": "second",
+    "gen_sg": "Graeci",
+    "eng": "a Greek"
+  },
+  "amor": {
+    "gender": "m",
+    "declension": "third",
+    "gen_sg": "amoris",
+    "eng": "love"
+  },
+  "carmen": {
+    "gender": "n",
+    "declension": "third",
+    "gen_sg": "carminis",
+    "eng": "song, poem"
+  },
+  "civitas": {
+    "gender": "f",
+    "declension": "third",
+    "gen_sg": "civitatis",
+    "eng": "state, citizenship"
+  },
+  "corpus": {
+    "gender": "n",
+    "declension": "third",
+    "gen_sg": "corporis",
+    "eng": "body"
+  },
+  "homo": {
+    "gender": "m",
+    "declension": "third",
+    "gen_sg": "hominis",
+    "eng": "human being, man"
+  },
+  "labor": {
+    "gender": "m",
+    "declension": "third",
+    "gen_sg": "laboris",
+    "eng": "labor, work, toil; a work, production"
+  },
+  "littera": {
+    "gender": "f",
+    "declension": "first",
+    "gen_sg": "litterae",
+    "eng": "a letter of the alphabet; litterae, litterarum, pl. a letter (epistle), literature"
+  },
+  "mos": {
+    "gender": "m",
+    "declension": "third",
+    "gen_sg": "moris",
+    "eng": "habit, custom, mnanner; mores, morum, pl. habits, morals, character"
   }
 }

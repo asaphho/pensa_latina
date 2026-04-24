@@ -4,5 +4,38 @@
   },
   "saepe": {
     "eng": "often"
+  },
+  "hodie": {
+    "eng": "today"
+  },
+  "semper": {
+    "eng": "always"
+  },
+  "cras": {
+    "eng": "tomorrow"
+  },
+  "heri": {
+    "eng": "yesterday"
+  },
+  "quando": {
+    "eng": "when"
+  },
+  "satis": {
+    "eng": "enough, sufficiently"
+  },
+  "tum": {
+    "eng": "then, at that time; thereupon, in the next place"
+  },
+  "ubi": {
+    "eng": "where, when"
+  },
+  "ibi": {
+    "eng": "there"
+  },
+  "nunc": {
+    "eng": "now, at present"
+  },
+  "quare": {
+    "eng": "because of which thing, or more commonly therefore, wherefore, why"
   }
 }
