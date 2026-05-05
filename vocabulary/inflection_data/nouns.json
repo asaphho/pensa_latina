@@ -1,0 +1,52 @@
+{
+  "adulescentia": {
+    "genitive": "adulescentiae",
+    "gender": "f",
+    "eng": "youth, young manhood; youthfulness"
+  },
+  "filia": {
+    "genitive": "filiae",
+    "gender": "f",
+    "eng": "daughter",
+    "irregularities": [
+      {
+        "case": "dat",
+        "number": "pl",
+        "form": "filiabus"
+      },
+      {
+        "case": "abl",
+        "number": "pl",
+        "form": "filiabus"
+      }
+    ]
+  },
+  "insidiae": {
+    "genitive": "insidiarum",
+    "gender": "f",
+    "plural_only": true,
+    "eng": "ambush, plot, treachery"
+  },
+  "nemo": {
+    "genitive": "nullius",
+    "gender": "m",
+    "common_gender": true,
+    "defective": true,
+    "eng": "no one, nobody",
+    "paradigm": {
+      "sg": {
+        "nom": "nemo",
+        "gen": "nullius",
+        "dat": "nemini",
+        "acc": "neminem",
+        "abl": "nullo",
+        "voc": "nemo"
+      }
+    }
+  },
+  "nihil": {
+    "indeclinable": true,
+    "gender": "n",
+    "eng": "nothing"
+  }
+}
