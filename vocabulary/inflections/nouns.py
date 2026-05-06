@@ -23,16 +23,16 @@ def get_declension(noun_data: dict) -> str:
                 return 'fifth' if genitive.endswith('e/i') else 'second'
             elif genitive.endswith('is'):
                 return 'third'
-            elif genitive.endswith('us'):
+            elif genitive.endswith('/us'):
                 return 'fourth'
             else:
                 raise ValueError(f'Unrecognized genitive form: {genitive}.')
         else:
-            if genitive.endswith('arum'):
+            if genitive.endswith('/arum'):
                 return 'first'
-            elif genitive.endswith('orum'):
+            elif genitive.endswith('/orum'):
                 return 'second'
-            elif genitive.endswith('erum'):
+            elif genitive.endswith('/erum'):
                 return 'fifth'
             elif genitive.endswith('um'):
                 return 'fourth' if genitive.endswith('uum') else 'third'
@@ -55,30 +55,32 @@ def decline_defective_noun(noun_data: dict, case: str, number: str) -> str:
 
 
 def decline_first_declension_regular(genitive: str, case: str, number: str, plural_only: bool) -> str:
-    stem = genitive[:-4] if plural_only else genitive[:-2]
+    stem = genitive[:-5] if plural_only else genitive[:-2]
     if number == 'sg' and plural_only:
         raise ValueError('No singular form exists.')
     if number == 'sg':
-        if case in ('nom', 'abl', 'voc'):
+        if case == 'nom' or case == 'voc':
             return stem + 'a'
         elif case == 'gen' or case == 'dat':
             return genitive
+        elif case == 'abl':
+            return stem + '/a'
         else:
             return stem + 'am'
     else:
         if case == 'nom' or case == 'voc':
             return stem + 'ae'
         elif case == 'gen':
-            return stem + 'arum'
+            return stem + '/arum'
         elif case == 'dat' or case == 'abl':
-            return stem + 'is'
+            return stem + '/is'
         else:
-            return stem + 'as'
+            return stem + '/as'
 
 
 def decline_second_declension_regular(nominative: str, genitive: str, gender: str, case: str, number: str,
                                       plural_only: bool) -> str:
-    stem = genitive[:-4] if plural_only else genitive[:-1]
+    stem = genitive[:-5] if plural_only else genitive[:-2]
     if number == 'sg' and plural_only:
         raise ValueError('No singular form exists.')
     if number == 'sg':
@@ -87,7 +89,7 @@ def decline_second_declension_regular(nominative: str, genitive: str, gender: st
         elif case == 'gen':
             return genitive
         elif case == 'dat' or case == 'abl':
-            return stem + 'o'
+            return stem + '/o'
         elif case == 'acc':
             return nominative if gender == 'n' else stem + 'um'
         else:
@@ -99,13 +101,13 @@ def decline_second_declension_regular(nominative: str, genitive: str, gender: st
                 return stem + 'e'
     else:
         if case == 'nom' or case == 'voc':
-            return stem + 'a' if gender == 'n' else stem + 'i'
+            return stem + 'a' if gender == 'n' else stem + '/i'
         elif case == 'gen':
-            return stem + 'orum'
+            return stem + '/orum'
         elif case == 'dat' or case == 'abl':
-            return stem + 'is'
+            return stem + '/is'
         else:
-            return stem + 'a' if gender == 'n' else stem + 'os'
+            return stem + 'a' if gender == 'n' else stem + '/os'
 
 
 def decline_third_declension_regular(nominative: str, genitive: str, gender: str, case: str, number: str,
@@ -119,14 +121,14 @@ def decline_third_declension_regular(nominative: str, genitive: str, gender: str
         elif case == 'gen':
             return genitive
         elif case == 'dat':
-            return stem + 'i'
+            return stem + '/i'
         elif case == 'acc':
             return nominative if gender == 'n' else stem + 'em'
         else:
             return stem + 'e'
     else:
         if case in ('nom', 'acc', 'voc'):
-            return stem + 'a' if gender == 'n' else stem + 'es'
+            return stem + 'a' if gender == 'n' else stem + '/es'
         elif case == 'gen':
             return stem + 'um'
         else:
@@ -167,3 +169,4 @@ def decline_noun(nominative: str, case: str, number: str) -> str:
                                                     number=number, plural_only=plural_only)
         else:
             raise NotImplementedError('Fourth and fifth declensions are not implemented yet.')
+
