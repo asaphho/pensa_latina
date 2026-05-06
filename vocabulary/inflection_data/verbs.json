@@ -1,22 +1,19 @@
 {
-  "ago": {
-    "principal_parts": ["ago", "agere", "egi", "actum"],
-    "conjugation": "third",
+  "ag/o": {
+    "principal_parts": ["ag/o", "agere", "/eg/i", "/actum"],
     "eng": "to drive, lead, do, act; pass, spend (life or time)"
   },
-  "amo": {
-    "principal_parts": ["amo", "amare", "amavi", "amatum"],
+  "am/o": {
+    "principal_parts": ["am/o", "am/are", "am/av/i", "am/atum"],
     "eng": "to live, like"
   },
-  "audeo": {
-    "principal_parts": ["audeo", "audere", "ausus sum"],
-    "conjugation": "second",
+  "aude/o": {
+    "principal_parts": ["aude/o", "aud/ere", "ausus sum"],
     "eng": "to dare"
   },
-  "duco": {
-    "principal_parts": ["duco", "ducere", "duxi", "ductum"],
-    "conjugation": "third",
-    "eng": "to lead; consider, regard; prolong",
+  "d/uc/o": {
+    "principal_parts": ["d/uc/o", "ducere", "d/ux/i", "ductum"],
+     "eng": "to lead; consider, regard; prolong",
     "irregularities": [
       {
         "person": "second",
@@ -24,7 +21,7 @@
         "tense": "present",
         "voice": "active",
         "mood": "imperative",
-        "form": "duc"
+        "form": "d/uc"
       }
     ]
   }

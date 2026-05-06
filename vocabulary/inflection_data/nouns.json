@@ -1,6 +1,6 @@
 {
-  "adulescentia": {
-    "genitive": "adulescentiae",
+  "adul/escentia": {
+    "genitive": "adul/escentiae",
     "gender": "f",
     "eng": "youth, young manhood; youthfulness"
   },
@@ -12,35 +12,35 @@
       {
         "case": "dat",
         "number": "pl",
-        "form": "filiabus"
+        "form": "f/ili/abus"
       },
       {
         "case": "abl",
         "number": "pl",
-        "form": "filiabus"
+        "form": "f/ili/abus"
       }
     ]
   },
-  "insidiae": {
-    "genitive": "insidiarum",
+  "/insidiae": {
+    "genitive": "/insidi/arum",
     "gender": "f",
     "plural_only": true,
     "eng": "ambush, plot, treachery"
   },
-  "nemo": {
-    "genitive": "nullius",
+  "n/em/o": {
+    "genitive": "null/ius",
     "gender": "m",
     "common_gender": true,
     "defective": true,
     "eng": "no one, nobody",
     "paradigm": {
       "sg": {
-        "nom": "nemo",
-        "gen": "nullius",
-        "dat": "nemini",
-        "acc": "neminem",
-        "abl": "nullo",
-        "voc": "nemo"
+        "nom": "n/em/o",
+        "gen": "null/ius",
+        "dat": "n/emin/i",
+        "acc": "n/eminem",
+        "abl": "n/ull/o",
+        "voc": "n/em/o"
       }
     }
   },

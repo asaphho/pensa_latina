@@ -19,8 +19,8 @@ def get_declension(noun_data: dict) -> str:
         if genitive_is_singular:
             if genitive.endswith('ae'):
                 return 'first'
-            elif genitive.endswith('i'):
-                return 'fifth' if genitive.endswith('ei') else 'second'
+            elif genitive.endswith('/i'):
+                return 'fifth' if genitive.endswith('e/i') else 'second'
             elif genitive.endswith('is'):
                 return 'third'
             elif genitive.endswith('us'):
