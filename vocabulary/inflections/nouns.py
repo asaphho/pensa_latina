@@ -1,6 +1,7 @@
 from vocabulary import VOCABULARY_FOLDER
 import os
 import json
+from utils.functions import render
 
 with open(os.path.join(VOCABULARY_FOLDER, 'inflection_data', 'nouns.json'), 'r') as f:
     NOUNS_DATA = json.load(f)
@@ -26,7 +27,7 @@ def get_declension(noun_data: dict) -> str:
             elif genitive.endswith('/us'):
                 return 'fourth'
             else:
-                raise ValueError(f'Unrecognized genitive form: {genitive}.')
+                raise ValueError(f'Unrecognized genitive form: {render(genitive)}.')
         else:
             if genitive.endswith('/arum'):
                 return 'first'
@@ -37,7 +38,7 @@ def get_declension(noun_data: dict) -> str:
             elif genitive.endswith('um'):
                 return 'fourth' if genitive.endswith('uum') else 'third'
             else:
-                raise ValueError(f'Unrecognized genitive form: {genitive}.')
+                raise ValueError(f'Unrecognized genitive form: {render(genitive)}.')
 
 
 def decline_defective_noun(noun_data: dict, case: str, number: str) -> str:
@@ -138,7 +139,7 @@ def decline_third_declension_regular(nominative: str, genitive: str, gender: str
 def decline_noun(nominative: str, case: str, number: str) -> str:
     noun_data: dict = NOUNS_DATA.get(nominative)
     if not noun_data:
-        raise ValueError(f'Noun data for {nominative} not found!')
+        raise ValueError(f'Noun data for {render(nominative)} not found!')
     declension = get_declension(noun_data)
     if declension == 'defective':
         return decline_defective_noun(noun_data=noun_data, case=case, number=number)
@@ -154,10 +155,10 @@ def decline_noun(nominative: str, case: str, number: str) -> str:
         plural_only = bool(noun_data.get('plural_only'))
         gender: str = noun_data.get('gender')
         if gender not in ('m', 'f', 'n'):
-            raise ValueError(f'Invalid or missing gender entry for {nominative} in noun data.')
+            raise ValueError(f'Invalid or missing gender entry for {render(nominative)} in noun data.')
         genitive: str = noun_data.get('genitive')
         if not genitive:
-            raise ValueError(f'Missing genitive entry for {nominative} in noun data.')
+            raise ValueError(f'Missing genitive entry for {render(nominative)} in noun data.')
         if declension == 'first':
             return decline_first_declension_regular(genitive=genitive, case=case, number=number,
                                                     plural_only=plural_only)
