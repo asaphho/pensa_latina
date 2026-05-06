@@ -63,3 +63,5 @@ def get_wrong_form(nouns_data: dict[str, list[str]], english: str, correct_form:
     return capitalize(wrong_form) if is_capitalized(correct_form) else wrong_form
 
 
+def compare_spellings(generated_word: str, input_word: str) -> bool:
+    return generated_word.replace('/', '').lower() == input_word.strip().lower()
