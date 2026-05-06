@@ -42,6 +42,21 @@ def add_form(json_filename: str, english: str, form: str) -> None:
             w.write(json.dumps(nouns_data, indent=4))
 
 
+_MACRONS = {
+    '/a': 'ā', '/A': 'Ā',
+    '/e': 'ē', '/E': 'Ē',
+    '/i': 'ī', '/I': 'Ī',
+    '/o': 'ō', '/O': 'Ō',
+    '/u': 'ū', '/U': 'Ū',
+}
+
+
+def render(text: str) -> str:
+    for code, macron in _MACRONS.items():
+        text = text.replace(code, macron)
+    return text
+
+
 def get_wrong_form(nouns_data: dict[str, list[str]], english: str, correct_form: str) -> str:
     available_forms = [word for word in nouns_data[english] if word.lower() != correct_form.lower()]
     wrong_form = random.choice(available_forms)
