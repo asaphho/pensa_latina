@@ -97,7 +97,7 @@ def decline_second_declension_regular(nominative: str, genitive: str, gender: st
             if not nominative.endswith('us'):
                 return nominative
             elif nominative.endswith('ius'):
-                return nominative[:-2]
+                return nominative[:-3] + '/i'
             else:
                 return stem + 'e'
     else:
