@@ -100,3 +100,35 @@ def conjugate_first_or_second_conjugation_present_system_regular(present_stem: s
             if person == 'third' and number == 'pl':
                 tense_sign = 'bu'
         return stem_to_use + tense_sign + personal_ending
+
+
+def conjugate_third_conjugation_non_io_present_system_regular(present_stem: str, person: str, number: str, tense: str,
+                                                              mood: str) -> str:
+    validate_present_system(tense=tense, mood=mood)
+    if mood == 'imperative' and person != 'second':
+        raise ValueError('Imperative must be in second person.')
+    if mood == 'infinitive':
+        return present_stem + 're'
+    if mood == 'imperative':
+        return present_stem if number == 'sg' else present_stem[:-1] + 'ite'
+    if person == 'first' and (tense == 'future' or tense == 'imperfect') and number == 'sg':
+        personal_ending = 'am'
+    else:
+        personal_ending = PRESENT_SYSTEM_PERSONAL_ENDINGS[person][number]
+    stem_to_use = present_stem[:-1]
+    if tense == 'present':
+        if not (person == 'first' and number == 'sg'):
+            stem_to_use += 'i' if not (person == 'third' and number == 'pl') else 'u'
+    elif tense == 'future':
+        if not (person == 'first' and number == 'sg'):
+            stem_to_use = present_stem if person == 'third' else stem_to_use + '/e'
+    elif tense == 'imperfect':
+        stem_to_use += '/e'
+    if tense == 'present' or tense == 'future':
+        return stem_to_use + personal_ending
+    else:
+        tense_sign = 'ba' if not (person == 'first' and number == 'sg') else 'b'
+        if person == 'second' or (person == 'first' and number == 'pl'):
+            tense_sign = 'b/a'
+        return stem_to_use + tense_sign + personal_ending
+
