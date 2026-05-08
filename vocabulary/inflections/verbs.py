@@ -3,7 +3,7 @@ from vocabulary import VOCABULARY_FOLDER
 import json
 from utils.functions import render
 
-PERSONAL_ENDINGS = {
+PRESENT_SYSTEM_PERSONAL_ENDINGS = {
     'first': {
         'sg': '/o',
         'pl': 'mus'
@@ -81,7 +81,7 @@ def conjugate_first_or_second_conjugation_present_system_regular(present_stem: s
     if tense == 'imperfect' and person == 'first' and number == 'sg':
         personal_ending = 'am'
     else:
-        personal_ending = PERSONAL_ENDINGS[person][number]
+        personal_ending = PRESENT_SYSTEM_PERSONAL_ENDINGS[person][number]
     if tense == 'present':
         return stem_to_use + personal_ending
     else:
