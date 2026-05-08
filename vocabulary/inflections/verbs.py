@@ -56,6 +56,8 @@ def validate_present_system(**kwargs) -> None:
     mood = kwargs.get('mood')
     if mood not in ('indicative', 'imperative', 'infinitive'):
         raise ValueError(f'Indicative, imperative, or infinitive mood required.')
+    if (mood == 'imperative' or mood == 'infinitive') and tense != 'present':
+        raise ValueError('Only present tense supported for infinitive and imperative moods.')
 
 
 def conjugate_first_or_second_conjugation_present_system_regular(present_stem: str, person: str, number: str, tense: str,
@@ -63,8 +65,6 @@ def conjugate_first_or_second_conjugation_present_system_regular(present_stem: s
     validate_present_system(tense=tense, mood=mood)
     if mood == 'imperative' and person != 'second':
         raise ValueError('Imperative must be in second person.')
-    if (mood == 'imperative' or mood == 'infinitive') and tense != 'present':
-        raise ValueError('Only present tense for imperative and infinitive moods allowed.')
     conjugation = 'first' if present_stem.endswith('/a') else 'second'
     stem_to_use = present_stem
     if mood == 'infinitive':
