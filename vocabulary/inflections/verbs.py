@@ -18,7 +18,6 @@ PRESENT_SYSTEM_PERSONAL_ENDINGS = {
     }
 }
 
-
 with open(os.path.join(VOCABULARY_FOLDER, 'inflection_data', 'verbs.json'), 'r') as f:
     VERBS_DATA = json.load(f)
 
@@ -43,7 +42,8 @@ def shorten_stem_vowel(verb_stem: str) -> str:
     if verb_stem.endswith('/a') or verb_stem.endswith('/e') or verb_stem.endswith('/i'):
         return ''.join(verb_stem.rsplit('/', maxsplit=1))
     else:
-        raise ValueError(f"Verb stem {render(verb_stem)} not ending in {render('/a')}, {render('/e')}, or {render('/i')}.")
+        raise ValueError(
+            f"Verb stem {render(verb_stem)} not ending in {render('/a')}, {render('/e')}, or {render('/i')}.")
 
 
 def validate_present_system(**kwargs) -> None:
@@ -60,7 +60,8 @@ def validate_present_system(**kwargs) -> None:
         raise ValueError('Only present tense supported for infinitive and imperative moods.')
 
 
-def conjugate_first_or_second_conjugation_present_system_regular(present_stem: str, person: str, number: str, tense: str,
+def conjugate_first_or_second_conjugation_present_system_regular(present_stem: str, person: str, number: str,
+                                                                 tense: str,
                                                                  mood: str) -> str:
     validate_present_system(tense=tense, mood=mood)
     if mood == 'imperative' and person != 'second':
@@ -132,3 +133,48 @@ def conjugate_third_conjugation_non_io_present_system_regular(present_stem: str,
             tense_sign = 'b/a'
         return stem_to_use + tense_sign + personal_ending
 
+
+def conjugate_fourth_conjugation_or_third_conjugation_io_present_system_regular(present_stem: str, person: str,
+                                                                                number: str, tense: str,
+                                                                                mood: str) -> str:
+    validate_present_system(tense=tense, mood=mood)
+    if mood == 'imperative' and person != 'second':
+        raise ValueError('Only second person allowed for imperative mood.')
+    elif mood == 'imperative':
+        if present_stem.endswith('e'):
+            return present_stem if number == 'sg' else present_stem[:-1] + 'ite'
+        else:
+            return present_stem if number == 'sg' else present_stem + 'te'
+    elif mood == 'infinitive':
+        return present_stem + 're'
+    else:
+        stem_to_use = present_stem[:-1] + 'i' if present_stem.endswith('e') else present_stem
+        if person == 'first' and number == 'sg' and tense != 'present':
+            personal_ending = 'am'
+        else:
+            personal_ending = PRESENT_SYSTEM_PERSONAL_ENDINGS[person][number]
+        if stem_to_use.endswith('/i'):
+            if tense != 'present':
+                stem_to_use = shorten_stem_vowel(stem_to_use)
+            elif person == 'third':
+                stem_to_use = shorten_stem_vowel(stem_to_use)
+            elif person == 'first' and number == 'sg':
+                stem_to_use = shorten_stem_vowel(stem_to_use)
+        if tense == 'present' and personal_ending == 'nt':
+            personal_ending = 'unt'
+        if tense == 'present':
+            return stem_to_use + personal_ending
+        else:
+            if not (tense == 'future' and person == 'first' and number == 'sg'):
+                stem_to_use += '/e'
+                if personal_ending == 't' or personal_ending == 'nt':
+                    stem_to_use = shorten_stem_vowel(stem_to_use)
+            if tense == 'future':
+                return stem_to_use + personal_ending
+            else:
+                tense_sign = 'ba' if not (person == 'first' and number == 'sg') else 'b'
+                if person == 'second':
+                    tense_sign = 'b/a'
+                elif person == 'first' and number == 'pl':
+                    tense_sign = 'b/a'
+                return stem_to_use + tense_sign + personal_ending
