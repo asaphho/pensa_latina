@@ -28,7 +28,7 @@ def get_conjugation(verb_data: dict) -> str:
         raise ValueError('Principal parts not found.')
     infinitive = principal_parts[1]
     verb_stem = infinitive[:-2]
-    if verb_stem.endswith('/a'):
+    if verb_stem.endswith('a'):
         return 'first'
     elif verb_stem.endswith('e'):
         return 'second' if verb_stem.endswith('/e') else 'third'
@@ -66,19 +66,23 @@ def conjugate_first_or_second_conjugation_present_system_regular(present_stem: s
     validate_present_system(tense=tense, mood=mood)
     if mood == 'imperative' and person != 'second':
         raise ValueError('Imperative must be in second person.')
-    conjugation = 'first' if present_stem.endswith('/a') else 'second'
+    conjugation = 'first' if present_stem.endswith('a') else 'second'
     stem_to_use = present_stem
     if mood == 'infinitive':
         return stem_to_use + 're'
     elif mood == 'imperative':
+        if present_stem == 'da' and number == 'sg':
+            return 'd/a'
         return stem_to_use if number == 'sg' else stem_to_use + 'te'
     if conjugation == 'first' and person == 'first' and number == 'sg' and tense == 'present':
-        stem_to_use = stem_to_use[:-2]
+        stem_to_use = stem_to_use[:-2] if stem_to_use != 'da' else 'd'
     elif tense == 'present':
         if person == 'third':
-            stem_to_use = shorten_stem_vowel(stem_to_use)
+            stem_to_use = shorten_stem_vowel(stem_to_use) if stem_to_use != 'da' else 'da'
         elif person == 'first' and number == 'sg':
             stem_to_use = shorten_stem_vowel(stem_to_use)
+    if stem_to_use == 'da' and person == 'second' and number == 'sg':
+        stem_to_use = 'd/a'
     if tense == 'imperfect' and person == 'first' and number == 'sg':
         personal_ending = 'am'
     else:
@@ -178,3 +182,36 @@ def conjugate_fourth_conjugation_or_third_conjugation_io_present_system_regular(
                 elif person == 'first' and number == 'pl':
                     tense_sign = 'b/a'
                 return stem_to_use + tense_sign + personal_ending
+
+
+def match_characteristics(kwargs: dict[str, str], to_match: dict[str, str]) -> bool:
+    for characteristic in ('person', 'number', 'tense', 'voice', 'mood'):
+        if kwargs.get(characteristic) != to_match.get(characteristic):
+            return False
+    return True
+
+
+def conjugate_verb_present_system(first_principal_part: str, person: str, number: str, tense: str, mood: str) -> str:
+    verb_data: dict = VERBS_DATA.get(first_principal_part)
+    if not verb_data:
+        raise ValueError(f"No data for {render(first_principal_part)} found.")
+    irregularities: list[dict[str, str]] = verb_data.get('irregularities')
+    if irregularities:
+        case = {'person': person, 'number': number, 'tense': tense, 'voice': 'active', 'mood': mood}
+        matching = [case_form for case_form in irregularities if match_characteristics(case, case_form)]
+        if matching:
+            return matching[0].get('form')
+    conjugation = get_conjugation(verb_data)
+    principal_parts: list[str] = verb_data.get('principal_parts')
+    present_stem = principal_parts[1][:-2]
+    if conjugation == 'first' or conjugation == 'second':
+        return conjugate_first_or_second_conjugation_present_system_regular(present_stem=present_stem, person=person,
+                                                                            number=number, tense=tense, mood=mood)
+    elif (first_principal_part.endswith('i/o') and conjugation == 'third') or conjugation == 'fourth':
+        return conjugate_fourth_conjugation_or_third_conjugation_io_present_system_regular(present_stem=present_stem,
+                                                                                           person=person, number=number,
+                                                                                           tense=tense, mood=mood)
+    else:
+        return conjugate_third_conjugation_non_io_present_system_regular(present_stem=present_stem, person=person,
+                                                                         number=number, tense=tense, mood=mood)
+
