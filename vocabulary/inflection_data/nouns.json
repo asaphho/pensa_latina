@@ -1,11 +1,27 @@
 {
+  "adul/esc/ens": {
+    "genitive": "adul/escentis",
+    "gender": "m",
+    "common_gender": true,
+    "eng": "young man or woman"
+  },
   "adul/escentia": {
     "genitive": "adul/escentiae",
     "gender": "f",
     "eng": "youth, young manhood; youthfulness"
   },
-  "filia": {
-    "genitive": "filiae",
+  "caelum": {
+    "genitive": "cael/i",
+    "gender": "n",
+    "eng": "sky, heaven"
+  },
+  "corpus": {
+    "genitive": "coporis",
+    "gender": "n",
+    "eng": "body"
+  },
+  "f/ilia": {
+    "genitive": "f/iliae",
     "gender": "f",
     "eng": "daughter",
     "irregularities": [
@@ -20,6 +36,11 @@
         "form": "f/ili/abus"
       }
     ]
+  },
+  "filius": {
+    "genitive": "fili/i",
+    "gender": "m",
+    "eng": "son"
   },
   "/insidiae": {
     "genitive": "/insidi/arum",
