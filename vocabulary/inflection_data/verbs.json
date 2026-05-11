@@ -11,6 +11,10 @@
     "principal_parts": ["aude/o", "aud/ere", "ausus sum"],
     "eng": "to dare"
   },
+  "d/o": {
+    "principal_parts": ["d/o", "dare", "ded/i", "datum"],
+    "eng": "to give, offer"
+  },
   "d/uc/o": {
     "principal_parts": ["d/uc/o", "ducere", "d/ux/i", "ductum"],
      "eng": "to lead; consider, regard; prolong",
