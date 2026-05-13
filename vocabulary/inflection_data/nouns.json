@@ -10,6 +10,16 @@
     "gender": "f",
     "eng": "youth, young manhood; youthfulness"
   },
+  "ager": {
+    "genitive": "agr/i",
+    "gender": "m",
+    "eng": "field, farm"
+  },
+  "am/icus": {
+    "genitive": "am/ic/i",
+    "gender": "m",
+    "eng": "friend"
+  },
   "caelum": {
     "genitive": "cael/i",
     "gender": "n",
@@ -69,5 +79,15 @@
     "indeclinable": true,
     "gender": "n",
     "eng": "nothing"
+  },
+  "po/eta": {
+    "genitive": "po/etae",
+    "gender": "m",
+    "eng": "poet"
+  },
+  "puer": {
+    "genitive": "puer/i",
+    "gender": "m",
+    "eng": "boy, pl. boys, children"
   }
 }
