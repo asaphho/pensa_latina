@@ -188,13 +188,13 @@
         ]
     },
     {
-        "sentence": "Claudia pecuniam Iulii amat, sed Iulium amatne",
-        "correct": "Claudia loves Jiulius' money, but does she love Julius?",
+        "sentence": "Claudia pecuniam Iulii amat; amatne Iulium",
+        "correct": "Claudia loves Julius' money; does she love Julius?",
         "wrong": [
-            "Claudia loves Julius' money, but she does not love Julius.",
-            "Julius loves Claudia's money, but does she love Julius?",
-            "Claudia loves Julius and his money, and Julius loves her.",
-            "Claudia loves Julius and his money, but does Julius love her?"
+            "Claudia loves Julius' money; she does not love Julius.",
+            "Julius loves Claudia's money; does she love Julius?",
+            "Claudia loves Julius and his money; Julius loves her.",
+            "Claudia loves Julius and his money; does Julius love her?"
         ]
     }
 ]
