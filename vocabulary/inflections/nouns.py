@@ -131,7 +131,7 @@ def decline_third_declension_regular(nominative: str, genitive: str, gender: str
     if number == 'sg' and plural_only:
         raise ValueError('No singular form exists.')
     if number == 'sg':
-        if case == 'nom' or 'voc':
+        if case == 'nom' or case == 'voc':
             return nominative
         elif case == 'gen':
             return genitive
