@@ -20,6 +20,16 @@
     "gender": "m",
     "eng": "friend"
   },
+  "amor": {
+    "genitive": "am/oris",
+    "gender": "m",
+    "eng": "love"
+  },
+  "ars": {
+    "genitive": "artis",
+    "gender": "f",
+    "eng": "art, skill"
+  },
   "caelum": {
     "genitive": "cael/i",
     "gender": "n",
@@ -58,6 +68,11 @@
     "plural_only": true,
     "eng": "ambush, plot, treachery"
   },
+  "mare": {
+    "genitive": "maris",
+    "gender": "n",
+    "eng": "sea"
+  },
   "n/em/o": {
     "genitive": "null/ius",
     "gender": "m",
@@ -79,6 +94,11 @@
     "indeclinable": true,
     "gender": "n",
     "eng": "nothing"
+  },
+  "n/ub/es": {
+    "genitive": "n/ubis",
+    "gender": "f",
+    "eng": "cloud"
   },
   "po/eta": {
     "genitive": "po/etae",
