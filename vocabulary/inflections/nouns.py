@@ -1,7 +1,7 @@
 from vocabulary import VOCABULARY_FOLDER
 import os
 import json
-from utils.functions import render
+from utils.functions import render, count_syllables
 
 with open(os.path.join(VOCABULARY_FOLDER, 'inflection_data', 'nouns.json'), 'r') as f:
     NOUNS_DATA = json.load(f)
@@ -114,6 +114,20 @@ def decline_second_declension_regular(nominative: str, genitive: str, gender: st
 def decline_third_declension_regular(nominative: str, genitive: str, gender: str, case: str, number: str,
                                      plural_only: bool) -> str:
     stem = genitive[:-2]
+    if plural_only:
+        i_stem = False
+    else:
+        if gender != 'n':
+            if nominative.endswith('es') or nominative.endswith('is'):
+                i_stem = count_syllables(nominative) == count_syllables(genitive)
+            elif nominative.endswith('s') or nominative.endswith('x'):
+                last_two_of_stem = stem[-2:].lower()
+                vowels = ('a', 'e', 'i', 'o', 'u')
+                i_stem = (len(last_two_of_stem) == 2) and (not any([letter in vowels for letter in last_two_of_stem]))
+            else:
+                i_stem = False
+        else:
+            i_stem = nominative.endswith('al') or nominative.endswith('ar') or nominative.endswith('e')
     if number == 'sg' and plural_only:
         raise ValueError('No singular form exists.')
     if number == 'sg':
@@ -126,12 +140,15 @@ def decline_third_declension_regular(nominative: str, genitive: str, gender: str
         elif case == 'acc':
             return nominative if gender == 'n' else stem + 'em'
         else:
-            return stem + 'e'
+            return stem + 'e' if not ((gender == 'n') and i_stem) else stem + '/i'
     else:
         if case in ('nom', 'acc', 'voc'):
-            return stem + 'a' if gender == 'n' else stem + '/es'
+            if not i_stem:
+                return stem + 'a' if gender == 'n' else stem + '/es'
+            else:
+                return stem + 'ia' if gender == 'n' else stem + '/es'
         elif case == 'gen':
-            return stem + 'um'
+            return stem + 'um' if not i_stem else stem + 'ium'
         else:
             return stem + 'ibus'
 
