@@ -65,3 +65,15 @@ def get_wrong_form(nouns_data: dict[str, list[str]], english: str, correct_form:
 
 def compare_spellings(generated_word: str, input_word: str) -> bool:
     return generated_word.replace('/', '').lower() == input_word.strip().lower()
+
+
+def count_syllables(word_with_slashes: str) -> int:
+    vowels = ('a', 'e', 'i', 'o', 'u')
+    diphthongs = ('ae', 'au', 'ei', 'eu', 'oe', 'ui')
+    false_diphthongs = [f'/{d}' for d in diphthongs]
+    word = word_with_slashes.lower()
+    total_vowels = sum([word.count(v) for v in vowels])
+    total_diphthongs = sum([word.count(d) for d in diphthongs])
+    compensate_for_false = sum([word.count(f) for f in false_diphthongs])
+    return total_vowels - total_diphthongs + compensate_for_false
+
