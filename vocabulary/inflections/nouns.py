@@ -1,7 +1,7 @@
 from vocabulary import VOCABULARY_FOLDER
 import os
 import json
-from utils.functions import render, count_syllables
+from utils.functions import render, count_syllables, VOWELS
 
 with open(os.path.join(VOCABULARY_FOLDER, 'inflection_data', 'nouns.json'), 'r') as f:
     NOUNS_DATA = json.load(f)
@@ -122,8 +122,7 @@ def decline_third_declension_regular(nominative: str, genitive: str, gender: str
                 i_stem = count_syllables(nominative) == count_syllables(genitive)
             elif nominative.endswith('s') or nominative.endswith('x'):
                 last_two_of_stem = stem[-2:].lower()
-                vowels = ('a', 'e', 'i', 'o', 'u')
-                i_stem = (len(last_two_of_stem) == 2) and (not any([letter in vowels for letter in last_two_of_stem]))
+                i_stem = (len(last_two_of_stem) == 2) and (not any([letter in VOWELS for letter in last_two_of_stem]))
             else:
                 i_stem = False
         else:
